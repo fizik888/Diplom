@@ -4,7 +4,7 @@
 <head>
   <title>Шаблон</title>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../styles/layout.css" type="text/css" />
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
 </head>
@@ -12,7 +12,7 @@
 <body>
   <header id="header" class="clear">
     <div id="hgroup">
-      <h1><a href="index.html">Название сайта</a></h1>
+      <h1><a href="../index.html">Название сайта</a></h1>
     </div>
     <nav>
       <ul>
@@ -24,66 +24,7 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content">
-      <p><strong>Тема заняття.</strong> Визначники, властивості визначників і способи обчислення</p>
-      <p>&nbsp;</p>
-      <p><strong>1. Поняття про матрицю</strong></p>
-      <p>Таблицю чисел вигляду</p>
-      <p>
-        \(\left(\begin{matrix}a_{11}&amp;a_{12}&amp;...&amp;a_{1n}\\a_{21}&amp;a_{22}&amp;...&amp;a_{2n}\\...&amp;...&amp;...&amp;...\\a_{m1}&amp;a_{m2}&amp;...&amp;a_{mn}\\\end{matrix}\right)\),
-      </p>
-      <p>яка складається з <em>m</em> рядків та <em>n</em> стовпців, називають <em>матрицею</em>. Числа &nbsp;називають
-        <em>елементами</em> матриці. Для будь-якого елемента &nbsp;перший індекс <em>і</em> означає номер рядка, а
-        другий індекс <em>k</em> &ndash; номер стовпця.</p>
-      <p>Якщо число рядків матриці не дорівнює числу стовпців (\(m\neq n\)), то матрицю називають <em>прямокутною</em>.
-        Якщо число рядків дорівнює числу стовпців, то таку матрицю називають <em>квадратною</em>. Наприклад, квадратними
-        є матриці</p>
-      <p>\(A=\left(\begin{matrix}a_{11}&a_{12}\\a_{21}&a_{22}\\\end{matrix}\right)\)
-        ,\(B=\left(\begin{matrix}b_{11}&b_{12}&b_{13}\\b_{21}&b_{22}&b_{23}\\b_{31}&b_{32}&b_{33}\\\end{matrix}\right)\)
-        .</p>
-      <p>Число рядків або стовпців квадратної матриці визначає її порядок. Тому порядок матриці А дорівнює 2, а порядок
-        матриці В дорівнює 3.</p>
-      <p>Діагональ, яка містить елементи \(a_{11},a_{22},...,a_{nn}\), називається <em>головною</em> діагоналлю матриці,
-        а діагональ, яка містить елементи \(a_{1n},a_{2n-1},...,a_{n1}\), називається <em>побічною</em>.</p>
-      <p>Якщо \(m>1\) і \(n=1\), то маємо матрицю</p>
-      <p>\(A=\left(\begin{matrix}a_{11}\\a_{21}\\...\\a_{m1}\\\end{matrix}\right)\),</p>
-      <p>яку називають <em>матрицею-стовпцем</em>.</p>
-      <p><strong>2. Визначник матриці. Обчислення визначників другого і третього порядку</strong></p>
-      <p>Нехай маємо квадратну матрицю другого порядку</p>
-      <p>\(A=\left(\begin{matrix}a_{11}&a_{12}\\a_{21}&a_{22}\\\end{matrix}\right)\).</p>
-      <p><em>Визначником (детермінантом) другого порядку</em>, який відповідає матриці <em>А</em> , називається число
-        \(a_{11}\cdot a_{22}-a_{12}\cdot a_{21}\).</p>
-      <p>Визначник другого порядку позначають так:</p>
-      <p>\(det{A}=\left|\begin{matrix}a_{11}&a_{12}\\a_{21}&a_{22}\\\end{matrix}\right|\), або коротко \(\Delta\).</p>
-      <p>Таким чином,</p>
-      <p>\(\Delta=\left|\begin{matrix}a_{11}&a_{12}\\a_{21}&a_{22}\\\end{matrix}\right|=a_{11}\cdot a_{22}-a_{12}\cdot
-        a_{21}\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)</p>
-      <p><strong><u>Приклад 1. </u></strong>Обчислити визначник другого порядку:</p>
-      <p>а) \(\left|\begin{matrix}2&5\\-3&-4\\\end{matrix}\right|\);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; б)
-        \(\left|\begin{matrix}-1&4\\5&2\\\end{matrix}\right|\).</p>
-      <p>За формулою (1) знаходимо:</p>
-      <p>а) \(\left|\begin{matrix}2&5\\-3&-4\\\end{matrix}\right|=2\cdot\left(-4\right)-\left(-3\right)\cdot5=-8+15=7\);
-      </p>
-      <p>б) \(\left|\begin{matrix}2&5\\-3&-4\\\end{matrix}\right|=2\cdot\left(-4\right)-\left(-3\right)\cdot5=-8+15=7\).
-      </p>
-      <p>Нехай маємо квадратну матрицю третього порядку</p>
-      <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        \(A=\left(\begin{matrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\\\end{matrix}\right)\).
-      </p>
-      <p><em>Визначником (детермінантом) третього порядку</em>, який відповідає матриці <em>A</em> , називається число,
-        яке обчислюється за
-        формулою\(\left|\begin{matrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\\\end{matrix}\right|=a_{11}\cdot\left|\begin{matrix}a_{22}&a_{23}\\a_{32}&a_{33}\\\end{matrix}\right|-a_{12}\cdot\left|\begin{matrix}a_{21}&a_{23}\\a_{31}&a_{33}\\\end{matrix}\right|+a_{13}\cdot\left|\begin{matrix}a_{21}&a_{22}\\a_{31}&a_{32}\\\end{matrix}\right|\)
-      </p>
-      <p>Визначник третього порядку позначають так:</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        \(det{A}=\left|\begin{matrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\\\end{matrix}\right|\),
-        або коротко \(\Delta\).</p>
-      <p>Таким чином,</p>
-      <p>
-        \(\Delta=\left|\begin{matrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\\\end{matrix}\right|=a_{11}\cdot\left|\begin{matrix}a_{22}&a_{23}\\a_{32}&a_{33}\\\end{matrix}\right|-a_{12}\cdot\left|\begin{matrix}a_{21}&a_{23}\\a_{31}&a_{33}\\\end{matrix}\right|+a_{13}\cdot\left|\begin{matrix}a_{21}&a_{22}\\a_{31}&a_{32}\\\end{matrix}\right|\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)</p>
-    </div>
+    <div id="content"></div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
@@ -113,8 +54,10 @@
                 href="razdel2_1.html">Визначники,
                 властивості визначників і способи обчислення</a></li>
             <li class="list" title="Системи лінійних рівнянь. Правило Крамера розв'язування систем лінійних рівнянь"><a
-                href="#">Системи лінійних рівнянь. Правило Крамера розв'язування систем лінійних рівнянь</a></li>
-            <li class="list" title="Метод Гауса розв’язування систем лінійних рівнянь"><a href="#">Метод Гауса
+                href="razdel2_2.html">Системи лінійних рівнянь. Правило Крамера розв'язування систем лінійних
+                рівнянь</a></li>
+            <li class="list" title="Метод Гауса розв’язування систем лінійних рівнянь"><a href="razdel2_3.html">Метод
+                Гауса
                 розв’язування систем лінійних рівнянь</a></li>
             <li class="list"
               title="Декартова та полярна система координат, вектори на площині; комплексні числа, як вектори координатної площини">
@@ -183,7 +126,7 @@
           </ul>
         </ul>
       </nav>
-      <h2 class="title">Орієнтовні Самостійні роботи</h2>
+      <h2 class=" title">Орієнтовні Самостійні роботи</h2>
       <nav>
         <ul>
           <li><a href="#">Самостійна робота №1</a></li>
@@ -219,6 +162,6 @@
     </p>
     <div class="clear"></div>
   </footer>
-</body>
+</body background="nubex.png">
 
 </html>

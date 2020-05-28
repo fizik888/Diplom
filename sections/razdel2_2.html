@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Шаблон</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../styles/layout.css" type="text/css" />
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+</head>
+
+<body>
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="../index.html">Название сайта</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li>Название страницы</li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+  <!-- content -->
+  <div id="container">
+    <!-- content body -->
+    <div id="content">
+      <p><strong>Тема заняття.</strong> Метод Крамера розв&rsquo;язування систем лінійних рівнянь.</p>
+      <p>&nbsp;</p>
+      <p><strong>Системи лінійних рівнянь. Основні поняття</strong></p>
+      <p><em>Система </em><em>m</em><em> лінійних рівнянь з </em><em>n</em><em> невідомими</em> &ndash; це система
+        вигляду</p>
+      <p>
+        \(\left\{\begin{matrix}a_{11}x_1+a_{12}x_2+...+a_{1n}x_n=b_{1,}\\a_{21}x_1+a_{22}x_2+...+a_{2n}x_n=b_{2,}\\...\mathrm{\
+        \ ...\ \ ...\ \ }...\mathrm{\ \ ...\ \ ...\ \ }...\mathrm{\ \ ...\ \ ...\ \ }...\
+        \\a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n=b_{m.}\\\end{matrix}\right.\)</p>
+      <p>Коефіцієнти \(a_{ij}\)&nbsp;при невідомих \(x_j\left(j=1,2,...,n\right)\)&nbsp;називаються <em>коефіцієнтами
+          системи</em> і мають два індекси. Перший індекс вказує порядковий номер рівняння, в якому знаходиться цей
+        коефіцієнт, другий індекс &ndash; номер невідомого, біля якого стоїть цей коефіцієнт. Величини
+        \(b_i\left(i=1,2,...,m\right)\)&nbsp;називаються <em>вільними членами</em>.</p>
+      <p>Розв&rsquo;язком системи називається сукупність чисел \(с1,с2,...,сn,\)&nbsp;яка, після підставляння в систему
+        замість невідомих \(x_1,x_2,...,x_n,\)&nbsp;перетворює всі рівняння системи в рівності (тотожності).</p>
+      <p>Система лінійних рівнянь називається <em>сумісною</em>, якщо вона має розв&rsquo;язок. Система, яка не має
+        розв&rsquo;язку, називається несумісною.</p>
+      <p>Сумісна система, яка має тільки один розв&rsquo;язок, називається <em>визначеною</em>; система, що має більше,
+        ніж один розв&rsquo;язок &ndash; <em>невизначеною</em>.</p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Правило Крамера</strong></p>
+      <p>Виведемо явні формули для розв&rsquo;язання системи <em>n</em> лінійних рівнянь з <em>n</em> невідомими.</p>
+      <p>Нехай</p>
+      <p>
+        \(\left\{\begin{matrix}a_{11}x_1+a_{12}x_2+...+a_{1n}x_n=b_{1,}\\a_{21}x_1+a_{22}x_2+...+a_{2n}x_n=b_{2,}\\...\mathrm{\
+        \ ...\ \ ...\ \ }...\mathrm{\ \ ...\ \ ...\ \ }...\mathrm{\ \ ...\ \ ...\ \ }...\
+        \\a_{n1}x_1+a_{n2}x_2+...+a_{nn}x_n=b_{n.}\\\end{matrix}\right.\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        (1)</p>
+      <p>- система <em>n</em> лінійних рівнянь з <em>n</em> невідомими. Визначник основної матриці A системи (1)
+        позначимо через \(\Delta\), тобто</p>
+      <p>
+        \(\Delta=det{A}=\left|\begin{matrix}a_{11}&a_{12}&...&a_{1n}\\a_{21}&a_{22}&...&a_{2n}\\...&...&...&...\\a_{n1}&a_{n2}&...&a_{nn}\\\end{matrix}\right|\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        .</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>Замінимо у визначнику \(\Delta\)&nbsp;будь-який стовпець, наприклад <em>i</em>-й, стовпцем з вільних членів.
+        Отриманий таким способом визначник будемо позначати через \(\Delta_i\), тобто</p>
+      <p>
+        \(\Delta_i=\left|\begin{matrix}a_{11}...a_{1i-1}\\a_{21}...a_{2i-1}\\...\\a_{n1}...a_{ni-1}\\\end{matrix}\mathrm{\
+        \ \ \ \ } \begin{matrix}b_1\\b_2\\...\\b_n\\\end{matrix}\mathrm{\ \ \ \ \ }
+        \begin{matrix}a_{1i+1}...a_{1n}\\a_{2i+1}...a_{2n}\\...\\a_{ni+1}...a_{nn}\\\end{matrix}\right|\).</p>
+      <p>&nbsp;</p>
+      <p><strong>Теорема (правило Крамера)</strong></p>
+      <p><em>Якщо визначник основної матриці системи (1) відмінний від нуля, то система сумісна і має єдиний
+          розв&rsquo;язок, який знаходиться за формулами</em></p>
+      <p>\(x_i=\frac{\Delta_i}{\Delta}\),\(i=1,2,...n\)
+        .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        (2)</p>
+      <p>&nbsp;</p>
+      <p>Формули (2) називаються <em>формулами Крамера</em>.</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong><u>Приклад 1.</u></strong> Розв&rsquo;язати систему лінійних рівнянь за правилом Крамера:</p>
+      <p>\(\left\{\begin{matrix}x-y+z=5,\\2x+y+z=6,\\x+y+2z=4.\\\end{matrix}\right.\)</p>
+      <p>Визначник основної матриці цієї системи</p>
+      <p>
+        \(\Delta=\left|\begin{matrix}1&-1&1\\2&1&1\\1&1&2\\\end{matrix}\right|=1\cdot\left(2-1\right)+1\cdot\left(4-1\right)+1\cdot\left(2-1\right)=1+3+1=5,\)
+      </p>
+      <p>Обчислимо визначники \(\Delta_i\), які отримаємо із визначника \(\Delta\)&nbsp;системи, замінивши в ньому
+        <em>i</em>-й стовпець стовпцем&nbsp; із вільних членів. Маємо:</p>
+      <p>\(Δх=\left|\begin{matrix}5&-1&1\\6&1&1\\4&1&2\\\end{matrix}\right|=5⋅2-1+1⋅12-4+1⋅6-4=5+8+2=15,\)&nbsp; &nbsp;
+      </p>
+      <p>\(х=\frac{Δх}{Δ}=\frac{15}{5}=3,\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>\(Δу=\left|\begin{matrix}1&5&1\\2&6&1\\1&4&2\\\end{matrix}\right|=1⋅12-4-5⋅4-1+1⋅8-6=8-15+2=-5,\)&nbsp;</p>
+      <p>\(у=\frac{Δу}{Δ}=\frac{-5}{5}=-1,\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>
+        \(\Delta_z=\left|\begin{matrix}1&-1&5\\2&1&6\\1&1&4\\\end{matrix}\right|=1\cdot\left(4-6\right)+1\cdot\left(8-6\right)+5\cdot\left(2-1\right)=-2+2+5=5,\)&nbsp;
+      </p>
+      <p>\(z=\frac{\Delta_z}{\Delta}=\frac{5}{5}=1.\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>Відповідь: (3;-1;1).</p>
+      <p>\(\left\{\begin{matrix}-2x_1+2х_2+х_3=1,\\-3x_1+3х_2=1,\\2x_1-х_2-5х_3=1.\\\end{matrix}\right.\)</p>
+      <p>Визначник основної матриці цієї системи</p>
+      <p>
+        \(\Delta=\left|\begin{matrix}-2&2&1\\-3&3&0\\2&-1&-5\\\end{matrix}\right|=-2\cdot\left(-15-0\right)-2\cdot\left(15-0\right)+1\cdot\left(3-6\right)=30-30-3=-3\)
+      </p>
+      <p>Обчислимо визначники \(\Delta_i\), які отримаємо із визначника \(\Delta\)&nbsp;системи, замінивши в ньому
+        <em>i</em>-й стовпець стовпцем&nbsp; із вільних членів. Маємо:</p>
+      <p>
+        \(\Delta_1=\left|\begin{matrix}1&2&1\\1&3&0\\1&-1&-5\\\end{matrix}\right|=1\cdot\left(-15-0\right)-2\cdot\left(-5-0\right)+1\cdot\left(-1-3\right)=-15+10-4=-9\)&nbsp;
+        &nbsp;</p>
+      <p>\(х_1=\frac{Δ_1}{Δ}=\frac{-9}{-3}=3,\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>
+        \(\Delta_2=\left|\begin{matrix}-2&1&1\\-3&1&0\\2&1&-5\\\end{matrix}\right|=-2\cdot\left(-5-0\right)-1\cdot\left(15-0\right)+1\cdot\left(-3-2\right)=10-15-5=-10,\)&nbsp;
+      </p>
+      <p>\(х_2=\frac{Δ_2}{Δ}=\frac{-10}{-3}=3\frac{1}{3},\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>
+        \(\Delta_3=\left|\begin{matrix}-2&2&1\\-3&3&1\\2&-1&1\\\end{matrix}\right|=-2\cdot\left(3+1\right)-2\cdot\left(-3-2\right)+1\cdot\left(3-6\right)=-8+10-3=-1,\)&nbsp;
+      </p>
+      <p>\(х_3=\frac{Δ_3}{Δ}=\frac{-1}{-3}=\frac{1}{3}.\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>Відповідь: (3; \(3\frac{1}{3}\);\(\frac{1}{3}\)).</p>
+    </div>
+
+    <!-- scripts -->
+    <script language="JavaScript">  /* Скрипт на выпадающий список */
+      function flipflop(id) {
+        element = document.getElementById(id);
+        if (element)
+          element.style.display =
+            element.style.display == "none" ? "" : "none";
+      }
+    </script>
+
+    <!-- right column -->
+    <aside id="right_column">
+      <h2 class="title">Теми</h2>
+      <nav>
+        <ul>
+          <li><a href="javascript:flipflop('list');" title="Функції та обчислення" class="mainHead">Функції та
+              обчислення</a></li>
+          <ul id="list" style="display: none;">
+            <li class="list" title="Властивості та графіки елементарних функцій. Перетворення графіків цункцій"><a
+                href="razdel1_1.html">Властивості та графіки елементарних функцій. Перетворення графіків цункцій</a>
+            </li>
+          </ul>
+          <li><a href="javascript:flipflop('list2');" title="Метод координат" class="mainHead">Метод координат</a></li>
+          <ul id="list2" style="display: none;">
+            <li class="list" title="Визначники, властивості визначників і способи обчислення"><a
+                href="razdel2_1.html">Визначники,
+                властивості визначників і способи обчислення</a></li>
+            <li class="list" title="Системи лінійних рівнянь. Правило Крамера розв'язування систем лінійних рівнянь"><a
+                href="razdel2_2.html">Системи лінійних рівнянь. Правило Крамера розв'язування систем лінійних
+                рівнянь</a></li>
+            <li class="list" title="Метод Гауса розв’язування систем лінійних рівнянь"><a href="razdel2_3.html">Метод
+                Гауса
+                розв’язування систем лінійних рівнянь</a></li>
+            <li class="list"
+              title="Декартова та полярна система координат, вектори на площині; комплексні числа, як вектори координатної площини">
+              <a href="#">Декартова та полярна система координат, вектори на площині; комплексні числа, як вектори
+                координатної площини</a></li>
+            <li class="list" title="Вектори у просторі, операції над векторами, заданими своїми координатами"><a
+                href="#">Вектори у просторі, операції над векторами, заданими своїми координатами</a></li>
+            <li class="list" title="Векторний добуток двох векторів та його властивості"><a href="#">Векторний добуток
+                двох векторів та його властивості</a></li>
+            <li class="list" title="Мішаний добуток трьох векторів"><a href="#">Мішаний добуток трьох векторів</a></li>
+          </ul>
+          <li><a href="javascript:flipflop('list3');" title="Застосування похідної та інтеграла"
+              class="mainHead">Застосування похідної
+              та інтеграла</a></li>
+          <ul id="list3" style="display: none;">
+            <li class="list" title="Похідна функції. Диференціювання функцій"><a href="#">Похідна функції.
+                Диференціювання функцій</a></li>
+            <li class="list" title="Поняття диференціал та його застосування в наближених обчисленнях"><a
+                href="#">Поняття диференціал та його застосування в наближених обчисленнях</a></li>
+            <li class="list" title="Дослідження функції із застосуванням похідної"><a href="#">Дослідження функції із
+                застосуванням похідної</a></li>
+            <li class="list" title="Невизначений інтеграл, основні методи інтегрування: метод підстановки"><a
+                href="#">Невизначений інтеграл, основні методи інтегрування: метод підстановки</a></li>
+            <li class="list" title="Основні методи інтегрування: інтегрування частинами"><a href="#">Основні методи
+                інтегрування: інтегрування частинами</a></li>
+            <li class="list" title="Визначений інтеграл, основні властивості, основні методи інтегрування"><a
+                href="#">Визначений інтеграл, основні властивості, основні методи інтегрування</a></li>
+            <li class="list" title="Диференціальні рівняння з відокремлюваними змінними"><a href="#">Диференціальні
+                рівняння з відокремлюваними змінними</a></li>
+            <li class="list" title="Лінійні диференціальні рівняння першого порядку"><a href="#">Лінійні диференціальні
+                рівняння першого порядку</a></li>
+            <li class="list" title="Лінійні однорідні диференціальні рівняння зі сталими коефіцієнтами"><a
+                href="#">Лінійні однорідні диференціальні рівняння зі сталими коефіцієнтами</a></li>
+          </ul>
+          <li><a href="javascript:flipflop('list4');" title="Елементи теорії ймовірностей та математичної статистики"
+              class="mainHead">Елементи теорії ймовірностей та
+              математичної статистики</a></li>
+          <ul id="list4" style="display: none;">
+            <li class="list" title="Випадковий дослід і випадкова подія. Ймовірність"><a href="#">Випадковий дослід і
+                випадкова подія. Ймовірність</a></li>
+            <li class="list" title="Ймовірність суми подій"><a href="#">Ймовірність суми подій</a></li>
+            <li class="list" title="Ймовірність добутку подій"><a href="#">Ймовірність добутку подій</a></li>
+            <li class="list" title="Формула повної ймовірності"><a href="#">Формула повної ймовірності</a></li>
+            <li class="list" title="Незалежні повторні випробування. Схема Бернуллі"><a href="#">Незалежні повторні
+                випробування. Схема Бернуллі</a></li>
+            <li class="list" title="Дискретні випадкові величини. Закон розподілу"><a href="#">Дискретні випадкові
+                величини. Закон розподілу</a></li>
+            <li class="list" title="Неперервні випадкові величини. Числові характеристики випадкових величин"><a
+                href="#">Неперервні випадкові величини. Числові характеристики випадкових величин</a></li>
+            <li class="list" title="Вибірка, варіаційний ряд. Вибіркові характеристики"><a href="#">Вибірка, варіаційний
+                ряд. Вибіркові характеристики</a></li>
+            <li class="list" title="Рівняння лінійної регресії"><a href="#">Рівняння лінійної регресії</a></li>
+          </ul>
+          <li><a href="javascript:flipflop(' list5');" title="Геометричне моделювання" class="mainHead">Геометричне
+              моделювання</a></li>
+          <ul id=" list5" style="display: none;">
+            <li class="list" title="Просторові фігури, методи їх зображень. Перерізі тіл"><a href="#">Просторові фігури,
+                методи їх зображень. Перерізі тіл</a></li>
+            <li class="list" title="Геометричне перетворення фігур. Симетрія фігур"><a href="#">Геометричне перетворення
+                фігур. Симетрія фігур</a></li>
+            <li class="list" title="Вимірювання відстаней, кутів, площ та об’ємів тіл"><a href="#">Вимірювання
+                відстаней,
+                кутів, площ та об’ємів тіл</a></li>
+            <li class="list" title="Комбінація тіл"><a href="#">Комбінація тіл</a></li>
+            <li class="list" title="Розгортки поверхонь"><a href="#">Розгортки поверхонь</a></li>
+          </ul>
+        </ul>
+      </nav>
+      <h2 class=" title">Орієнтовні Самостійні роботи</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Самостійна робота №1</a></li>
+          <li><a href="#">Самостійна робота №2</a></li>
+          <li><a href="#">Самостійна робота №3</a></li>
+          <li><a href="#">Самостійна робота №4</a></li>
+          <li><a href="#">Самостійна робота №5</a></li>
+          <li><a href="#">Самостійна робота №6</a></li>
+          <li><a href="#">Самостійна робота №7</a></li>
+          <li><a href="#">Самостійна робота №8</a></li>
+          <li><a href="#">Самостійна робота №9</a></li>
+          <li><a href="#">Самостійна робота №10</a></li>
+          <li><a href="#">Самостійна робота №11</a></li>
+          <li><a href="#">Самостійна робота №12</a></li>
+          <li><a href="#">Самостійна робота №13</a></li>
+          <li><a href="#">Самостійна робота №14</a></li>
+          <li><a href="#">Самостійна робота №15</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- / content body -->
+    <div class="clear"></div>
+  </div>
+  <!-- footer -->
+  <footer id="footer">
+    <p class="fl_left">
+      Copyright &copy; 2020 - All Rights Reserved -
+      <a href="#">копирайт изменить</a>
+    </p>
+    <p class="fl_right">
+      Template by
+      <a href="#" title="Free Website Templates">OS Templates</a>
+    </p>
+    <div class="clear"></div>
+  </footer>
+</body>
+
+</html>
