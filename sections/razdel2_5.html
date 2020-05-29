@@ -24,7 +24,171 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content"><p><strong>Тема заняття.</strong> Вектори у просторі, дії над векторами, що задані своїми координатами</p>
+      <p>&nbsp;</p>
+      <p><strong>Вектор. Основні поняття</strong></p>
+      <p>Величини, які можна охарактеризувати лише числом, називаються <em>скалярними</em>. Приклади скалярних величин &ndash; маса, щільність, електричний заряд, температура. Величини, які визначаються не лише числовим значенням, а й напрямом у просторі, називають <em>векторними</em>. До них належать, зокрема, сила, переміщення, швидкість, прискорення, напруженість електричного та магнітного полів.</p>
+      <p><em>Вектором</em> називається напрямлений відрізок, тобто відрізок, початок і кінець якого вказані.</p>
+      <p>Вектор, початком якого є точка А, а кінцем &ndash; точка В, позначається символом \(\overline{АВ}\). Часто вживається також позначення вектора однією малою буквою латинського алфавіту із стрілочкою зверху, наприклад, \(\vec{a}\), \(\vec{b}\), \(\vec{c}\), &hellip; .</p>
+      <p><em>Довжиною, або модулем</em> вектора \(\overline{АВ}\)&nbsp;називається довжина відрізка АВ. Позначається \(|\overline{AB}|\).</p>
+      <p>Вектор називається <em>нульовим</em>, якщо початок і кінець його збігаються. Позначається нульовий вектор символом \(\vec{0}\).</p>
+      <p>Вектори називаються <em>колінеарними</em>, якщо вони лежать або на одній прямій, або на паралельних прямих.</p>
+      <p>Два вектори називаються <em>рівними</em>, якщо вони колінеарні, спрямовані в один бік і мають однакову довжину.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Два колінеарні вектори, які мають однакову довжину і протилежні напрямки, називаються <em>взаємно протилежними</em>.</p>
+      <p>Вектор, протилежний вектору \(\vec{a}\), позначається \(-\vec{a}\).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Вектор, довжина якого дорівнює одиниці, називається <em>одиничним</em>. Одиничний вектор того самого напряму, що й вектор &nbsp;\(\vec{a}\), називається його <em>ортом</em>.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Три вектори називаються <em>компланарними</em>, якщо вони паралельні одній площині або лежать у паралельних площинах.</p>
+      <p>&nbsp;</p>
+      <p><strong>Базис у просторі</strong></p>
+      <p><em>Лінійна комбінація</em> векторів &ndash; це сума заданих векторів, помножених на деякі числа: \(с_1\vec{a_1}+с_2\vec{a_2}+...+с_n\vec{a_n}=\vec{b}\).</p>
+      <p>Числа <em>с</em><sub>1</sub>, <em>с</em><sub>2</sub>,&hellip;, <em>с</em><em><sub>n</sub></em> називають <em>коефіцієнтами лінійної комбінації</em>.</p>
+      <p>Так, наприклад, вектор \(\vec{d}=2\vec{a}-3\vec{b}+7\vec{c}\)&nbsp;є лінійною комбінацією векторів \(\vec{a}\), \(\vec{b}\)&nbsp;і \(\vec{c}\). На рисунку нижче зображено лінійну комбінацію, представлену вектором \(\vec{b}=3{\vec{a}}_1+2{\vec{a}}_2\).</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/8.png" alt="" />
+      <p>Вектори \({\vec{a}}_1\), \({\vec{a}}_2\), &hellip;, \({\vec{a}}_n\)&nbsp;називають <em>лінійно залежними</em>, якщо їхня лінійна комбінація дорівнює нульовому вектору \(\vec{0}\)&nbsp;за умови, що хоча б один з коефіцієнтів <em>с</em><sub>1</sub>, <em>с</em><sub>2</sub>,&hellip;, <em>с</em><em><sub>n</sub></em> відмінний від нуля.</p>
+      <p>Вектори \({\vec{a}}_1\), \({\vec{a}}_2\), &hellip;, \({\vec{a}}_n\)&nbsp;називають <em>лінійно незалежними</em>, якщо їхня лінійна комбінація дорівнює нульовому вектору \(\vec{0}\)&nbsp;лише у разі, коли всі коефіцієнти <em>с</em><sub>1</sub>, <em>с</em><sub>2</sub>,&hellip;, <em>с</em><em><sub>n</sub></em> дорівнюють нулю.</p>
+      <p><strong>Необхідною і достатньою умовою</strong> лінійної залежності трьох векторів є компланарність цих векторів.</p>
+      <p><em>Базис</em> &ndash; це система лінійно незалежних векторів.</p>
+      <p><em>Базисом у просторі</em> називають будь-які три некомпланарні вектори \(\vec{e}_1\), \(\vec{e}_2\), \(\vec{e}_3\).</p>
+      <p><strong>Теорема</strong>. Нехай вектори \(\vec{e}_1\), \(\vec{e}_2\), \(\vec{e}_3\)&nbsp;утворюють базис у просторі. Тоді будь-який вектор \(\vec{a}\)&nbsp;може бути єдиним чином поданий у вигляді лінійної комбінації базисних векторів \(\vec{e}_1\), \(\vec{e}_2\), \(\vec{e}_3\):</p>
+      <p>\(\vec{a}=х⋅\vec{e}_1+у⋅\vec{e}_2+z⋅\vec{e}_3\)&nbsp;(1)</p>
+      <p>Рівність (1) називають <em>розкладом вектора</em> \(\vec{a}\)&nbsp;<em>за базисом</em> \(\vec{e}_1\), \(\vec{e}_2\), \(\vec{e}_3\), а числа <em>х</em>, <em>у</em> і <em>z</em> &ndash; <em>координатами вектора</em> \(\)&nbsp;у даному базисі; тобто запишемо \(\vec{a}\left(x;y;z\right)\).</p>
+      <p><strong>Приклад 1.</strong> У просторі задано три вектори \(\vec{e_1}\left(2;-2;3\right)\), \(\vec{e_2}\left(4;-1;1\right)\)&nbsp;і \(\vec{e_3}\left(0;3;1\right)\). Знайти розклад вектора \(\vec{a}\left(2;7;6\right)\)&nbsp;за базисом \(\vec{e_1}\),&nbsp;\(\vec{e_2}\), \(\vec{e_3}\).</p>
+      <p><em>Розв&rsquo;язання</em>. Нехай вектор \(\vec{a}\)&nbsp;у базисі \(\vec{e_1}\), \(\vec{e_2}\), \(\vec{e_3}\)&nbsp;має координати \(\vec{a}\left(x;y;z\right)\), тоді користуючись формулою (1) його можна записати у вигляді \(\vec{a}=х⋅\vec{e}_1+у⋅\vec{e}_2+z⋅\vec{e}_3\), або в координатах заданих векторів як \(\left(\begin{matrix}2\\7\\6\\\end{matrix}\right)=x\cdot\left(\begin{matrix}2\\-2\\3\\\end{matrix}\right)+y\cdot\left(\begin{matrix}4\\-1\\1\\\end{matrix}\right)+z\cdot\left(\begin{matrix}0\\3\\1\\\end{matrix}\right)\). Порівнявши відповідні координати, отримаємо систему рівнянь:\(\left\{\begin{matrix}2=2x+4y+0\cdot z,\\7=-2x-y+3z,\\6=3x+y+z.\\\end{matrix}\right.\)</p>
+      <p>або як звично для нас\(\left\{\begin{matrix}2x+4y=2,\\-2x-y+3z=7,\\3x+y+z=6.\\\end{matrix}\right.\)</p>
+      <p>За формулами Крамера:</p>
+      <p>\(х=\frac{Δ_1}{Δ}\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(y=\frac{Δ_2}{Δ}\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(z=\frac{Δ_3}{Δ}\).</p>
+      <p>\(\Delta=\left|\begin{matrix}2&4&0\\-2&-1&3\\3&1&1\\\end{matrix}\right|=-2+36-6+8=36,\)</p>
+      <p>\(\Delta_1=\left|\begin{matrix}2&4&0\\7&-1&3\\6&1&1\\\end{matrix}\right|=-2+72-6-28=36,\)</p>
+      <p>\(\Delta_2=\left|\begin{matrix}2&2&0\\-2&7&3\\3&6&1\\\end{matrix}\right|=14+18-36+4=0,\)</p>
+      <p>\(\Delta_3=\left|\begin{matrix}2&4&2\\-2&-1&7\\3&1&6\\\end{matrix}\right|=-12+84-4+6-14+48=108,\)</p>
+      <p>Отже, координати вектора \(\vec{a}\)&nbsp;у заданому базисі: \(х=\frac{36}{36}=1\), \(y=\frac{0}{36}=0\), \(z=\frac{108}{36}=3\), а його розклад за базисом \(\vec{e_1}\), \(\vec{e_2}\), \(\vec{e_3}\)&nbsp;запишемо таким чином:</p>
+      <p>\(\vec{a}=\vec{е_1}+3\vec{е_3}\), або \(\vec{a}\left(1;0;3\right)\).</p>
+      <p><strong>Прямокутна декартова система координат</strong></p>
+      <p><em>Систему координат</em> у просторі утворюють точка <em>O</em> (початок координат) і базис \(\vec{е}_1\), \(\vec{е}_2\), \(\vec{е}_3\), приведений до цієї точки.</p>
+      <p>Базис називають <em>ортонормованим</em>, якщо його вектори попарно ортогональні (перпендикулярні) і мають одиничну довжину. Система координат з ортонормованим базисом зветься <strong><em>декартовою прямокутною</em></strong>. В іншому разі систему координат називають <em>загальною</em> або <em>косокутною</em> чи <em>афінною</em>.</p>
+      <p>Далі мова йтиме про вектори в декартовій прямокутній системі координат.</p>
+      <p>Базисні вектори \(\vec{е}_1\), \(\vec{е}_2\), \(\vec{е}_3\)&nbsp;такої системи координат позначають зазвичай літерами \(\vec{i}\), \(\vec{j}\), \(\vec{k}\). Через початок координат <em>О</em> у напрямку базисних векторів \(\vec{i}\), \(\vec{j}\), \(\vec{k}\)&nbsp;проходять осі координат (абсцис, ординат, аплікат), які позначаються відповідно <em>Ох</em>, <em>Оу</em>, <em>Оz</em>.</p>
+      <p>Координатні площини <em>xОy</em>, <em>xОz</em> та <em>yОz</em>, що проходять через відповідні пари координатних осей, поділяють простір на 8 октантів.</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/9.png" alt="" />
+      <p>Прямокутні декартові системи координат поділяють на <strong><em>ліві</em> </strong>та <strong><em>праві</em></strong>.</p>
+      <p>Різниця між лівою та правою системами координат у просторі аналогічна відмінності між лівим та правим гвинтами в техніці.</p>
+      <p>Якщо привести вектори \(\vec{i}\), \(\vec{j}\), \(\vec{k}\)&nbsp;до спільного початку, то в правій системі координат найкоротший поворот від &nbsp;до &nbsp;з кінця вектора &nbsp;спостерігається проти ходу годинникової стрілки. У лівій системі координат цей поворот видно за ходом годинникової стрілки (рис.1).</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/10.png" alt="" />
+      <p style="text-align: center">Рис.1</p>
+      <p><strong><em>Радіус-вектором</em></strong> точки <em>М</em> називається вектор \(\vec{r}=\vec{ОМ}\), спрямований з початку координат в цю точку.</p>
+      <p>Запишемо розклад радіус-вектора \(\vec{ОМ}\)&nbsp;за базисом \(\vec{i}\), \(\vec{j}\), \(\vec{k}\): \(\vec{ОМ}=х⋅\vec{i}+y⋅\vec{j}+z⋅\vec{k}\). Тут <em>х</em>, <em>у</em>, <em>z</em> &ndash; координати вектора \(\vec{ОМ}\)&nbsp;, які являють собою проекції цього вектора на координатні осі <em>Ох</em>, <em>Оу</em>, <em>Оz</em>.</p>
+      <p><strong><em>Координатами точки М</em></strong> у заданій системі координат називають координати її радіус-вектора \(\vec{ОМ}\). Отже, точка <em>М</em> має координати <em>х</em>, <em>у</em>, <em>z</em>, що записують таким чином \(М\left(x;y;z\right)\)&nbsp;(рис.2).</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/11.png" alt="" />
+      <p style="text-align: center">Рис.2</p>
+      <p>Розклад довільного вектор \(\vec{a}\)&nbsp;за базисом&nbsp; \(\vec{i}\), \(\vec{j}\), \(\vec{k}\)&nbsp;має вигляд:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{a}=а_х\vec{i}+a_y\vec{j}+a_z\vec{k}\), або&nbsp;\(\vec{a}\left(a_x;a_y;a_z\right)\)</p>
+      <p>У прямокутній системі координати вектора &nbsp;співпадають з його проекціями на осі <em>Оx</em>, <em>Oy</em>, <em>Oz</em> (рис.3).</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/12.png" alt="" />
+      <p style="text-align: center">Рис.3</p>
+      <p>Якщо відомі координати точок \(A\left(x_А;y_А;z_А\right)\), \(B\left(x_В;y_В;z_В\right)\), то <strong><em>координати вектора </em></strong>\(\vec{AB}\)&nbsp;дорівнюють різницям відповідних координат його кінця <em>В</em> і початку <em>А</em>.&nbsp; Отже, \(\vec{AB}\left(x_В-x_А;y_В-y_А;z_В-z_А\right)\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)</p>
+      <p><strong>Довжина вектора</strong></p>
+      <p>Нехай задано вектор \(\vec{a}=а_х\vec{i}+a_y\vec{j}+a_zvec{k}\) (рис.3), тобто \(\vec{a}\left(a_x;a_y;a_z\right)\).</p>
+      <p>Тоді довжина (модуль) вектора \(\)&nbsp;дорівнює діагоналі <em>ОА</em> паралелепіпеда, ребра якого <em>ОВ</em>, <em>ОD</em>, <em>OK</em> дорівнюють відповідно \(a_x,a_y,a_z\):</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(ОА^2=ОВ^2+OD^2+OK^2\)</p>
+      <p>або</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\left|\vec{a}\right|^2=а_х^2+a_y^2+a_z^2\).</p>
+      <p>Отже, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\left|\vec{a}\right|=\sqrt{a_x^2+a_y^2+a_z^2}\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3)</p>
+      <p>Нехай задано вектор \(\vec{а}=\vec{AB}\), де \(A\left(x_1;y_1;z_1\right)\), \(B\left(x_2;y_2;z_2\right)\). В цьому разі вектор \(\vec{а}=x_2-x_1;y_2-y_1;z_2-z_1\), а його довжина</p>
+      <p>\(|\vec{а}|=|\vec{AB}|=\sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2+\left(z_2-z_1\right)^2}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4)</p>
+      <p><strong><em>Відстань між точками А і В</em></strong> обчислюється як довжина вектора \(\vec{AB}\)&nbsp;за формулою (4).</p>
+      <p>&nbsp;</p>
+      <p><strong>Напрямок вектора у просторі. Напрямні косинуси</strong></p>
+      <p>Нехай ненульовий вектор \(\vec{a}\left(a_x;a_y;a_z\right)\)&nbsp;утворює з осями <em>Ох</em>, <em>Оу</em>, <em>Оz </em>кути &alpha;, &beta; , &gamma; (рис.4).</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/13.png" alt="" />
+      <p>Рис.4</p>
+      <p>Оскільки координати вектора дорівнюють його проекціям на відповідні осі, то можна записати</p>
+      <p>\(cos{\alpha}=\frac{a_x}{\left|\vec{a}\right|}\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(cos{\beta}=\frac{a_y}{\left|\vec{a}\right|}\), &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(cos{\gamma}=\frac{a_z}{\left|\vec{a}\right|}\). (5)</p>
+      <p>Величини \(cos{\alpha}\), \(cos{\beta}\), \(cos{\gamma}\)&nbsp;називають <strong><em>напрямними косинусами вектора</em></strong> \(\vec{a}\). Вони пов&rsquo;язані між собою співвідношенням</p>
+      <p>\({cos}^2{\alpha}+{cos}^2{\beta}+{cos}^2{\gamma}=1\).</p>
+      <p><strong>Приклад 2</strong>. Знайти координати вектора \(\vec{а}=\vec{AB}\), записати його розклад за базисом \(\vec{i}\), \(\vec{j}\), \(\vec{k}\)&nbsp;та визначити напрямні косинуси вектора \(\vec{a}\), якщо \(A\left(3;3;1\right)\), \(B\left(5;1;2\right)\).</p>
+      <p><em>Розв&rsquo;язання</em>: За формулою (2) знайдемо координати вектора \(\vec{а}=\vec{AB}\left(5-3;1-3;2-1\right)\), \(\vec{а}\left(2;-2;1\right)\).</p>
+      <p>Розклад вектора \(\vec{a}\)&nbsp;за базисом&nbsp; \(\vec{i}\), \(\vec{j}\), \(\vec{k}\)&nbsp;має вид \(\vec{a}=2\vec{i}-2\vec{j}+\vec{k}\).</p>
+      <p>За формулою (3) знайдемо довжину вектора \(vec{а}\): \(\left|\vec{a}\right|=\sqrt{2^2+\left(-2\right)^2+1^2}=\sqrt{4+4+1}=\sqrt9=3\).</p>
+      <p>За формулою (5) знайдемо напрямні косинуси вектора \(\vec{а}\).</p>
+      <p>\(cos{\alpha}=\frac{a_x}{\left|\vec{a}\right|}=\frac{2}{3}\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(cos{\beta}=\frac{a_y}{\left|\vec{a}\right|}=-\frac{2}{3}\), &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(cos{\gamma}=\frac{a_z}{\left|\vec{a}\right|}=\frac{1}{3}\).</p>
+      <p><strong>Дії над векторами, заданими своїми координатами</strong></p>
+      <ul>
+      <li><strong>Додавання і віднімання векторів</strong></li>
+      </ul>
+      <p>Сумою векторів \(\vec{a}\left(a_x;a_y;a_z\right)\) і \(\vec{b}\left(b_x;b_y;b_z\right)\)&nbsp;називається вектор</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{с}\left(a_x+b_x;a_y+b_y;a_z+b_z\right)\).&nbsp;&nbsp; (6)</p>
+      <p>Різницею векторів \(\vec{a}\left(a_x;a_y;a_z\right)\)&nbsp;і \(\vec{b}\left(b_x;b_y;b_z\right)\)&nbsp;називається вектор</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{d}\left(a_x-b_x;a_y-b_y;a_z-b_z\right)\).&nbsp; (7)</p>
+      <ul>
+      <li><strong>Множення вектора на число</strong></li>
+      </ul>
+      <p>Добутком вектора \(\vec{a}\left(a_x;a_y;a_z\right)\)&nbsp;на число <em>k</em> називається вектор</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{b}\left(ka_x;ka_y;ka_z\right)\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (8)</p>
+      <ul>
+      <li><strong>Умови колінеарності двох векторів</strong></li>
+      </ul>
+      <p>Якщо ж вектори \(\vec{a}\)&nbsp;та \(\vec{b}\)&nbsp;колінеарні, то \(\frac{a_x}{b_x}=\frac{a_y}{b_y}=\frac{a_z}{b_z}=k\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9)</p>
+      <p>&nbsp;</p>
+      <p><strong>Приклад 3.</strong> Чи є колінеарними вектори \(\vec{с}=3\vec{а}-2\vec{b}\)&nbsp;і \(\vec{d}=2\vec{a}-3\vec{b}\), побудовані на векторах \(\vec{a}\left(1;-2;1\right)\)&nbsp;і \(\vec{b}\left(0;-3;4\right)\)?</p>
+      <p><em>Розв&rsquo;язання</em>: Знайдемо координати наступних векторів, користуючись формулою (8)&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;\(3\vec{а}\left(3;-6;3\right)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(2\vec{а}\left(2;-4;2\right)\)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \(2\vec{b}\left(0;-6;8\right)\)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \(3\vec{b}\left(0;-9;12\right)\)</p>
+      <p>За допомогою формули (7) знайдемо координати векторів \(\vec{с}=3\vec{а}-2\vec{b}\)&nbsp;і \(\vec{d}=2\vec{а}-3\vec{b}\):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{с}\left(3-0;-6-\left(-6\right);3-8\right)\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;\(\vec{с}\left(3;0;-5\right)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\vec{d}\left(2-0;-4-\left(-9\right);3-8\right)\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\vec{d}\left(2;5;-5\right)\)</p>
+      <p>Перевіримо колінеарність (формула (9)):&nbsp; &nbsp;&nbsp; \(\frac{3}{2}\neq\frac{0}{5}\neq\frac{-5}{-5}\), тобто вектори \(\vec{c}\)&nbsp;і \(\vec{d}\)&nbsp;не колінеарні.</p>
+      <p><strong>Скалярний добуток двох векторів</strong></p>
+      <p>Нехай задані вектори \(\vec{a}\) та \(\vec{b}\).</p>
+      <table>
+      <tbody>
+      <tr>
+      <td width="134">&nbsp;<img src="../images/2/14.png" alt="" /></td>
+      <td width="504">
+      <p>Скалярним добутком двох векторів називається число, яке дорівнює добуткові довжин цих векторів на косинус кута між ними.</p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <p>Скалярний добуток векторів \(\vec{a}\)&nbsp;та \(\vec{b}\)&nbsp;позначається символом \(\vec{a}\cdot\vec{b}\). Отже, на основі означення маємо \(\).</p>
+      <p><em>Основні властивості скалярного добутку</em></p>
+      <ol>
+      <li>\(\vec{a}\cdot\vec{b}=\vec{b}\cdot\vec{a}\)</li>
+      <li>\(\lambda\vec{a}\cdot\vec{b}=\lambda\left(\vec{a}\cdot\vec{b}\right)\)</li>
+      <li>\(\left(\vec{a}+\vec{c}\right)\cdot\vec{b}=\vec{a}\cdot\vec{b}+\vec{c}\cdot\vec{b}\)</li>
+      <li><strong>Умова перпендикулярності векторів.</strong> Скалярний добуток ненульових векторів&nbsp;\(\vec{a}\) і&nbsp;\(\vec{b}\) дорівнює нулю тоді і тільки тоді, коли вектори взаємно перпендикулярні: \(\vec{a}\cdot\vec{b}=0\), якщо \(\vec{a}\bot\vec{b}\), і навпаки.</li>
+      <li><strong>Скалярний квадрат вектора</strong> дорівнює квадрату його довжини \(\vec{а}^2=\vec{a}⋅\vec{a}=|\vec{a}^2|\), звідки \(\left|\vec{a}\right|=\sqrt{\vec{a}\cdot\vec{a}}=\sqrt{\vec{а}^2}\).</li>
+      </ol>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Скалярний добуток в декартових координатах</strong></p>
+      <p>Нехай \(\vec{a}\left(a_x;a_y;a_z\right)\), \(\vec{b}\left(b_x;b_y;b_z\right)\). Тоді, \(\vec{a}=а_х\vec{i}+а_y\vec{j}+а_z\vec{k}\), \(\vec{b}=b_х\vec{i}+b_y\vec{j}+b_z\vec{k}\), де \(\vec{i}\), \(\vec{j}\), \(\vec{k}\)&nbsp;- одиничні попарно перпендикулярні вектори, тобто \(\vec{i}\cdot\vec{i}=\vec{j}\cdot\vec{j}=\vec{k}\cdot\vec{k}=1\), \(\vec{i}\cdot\vec{j}=\vec{j}\cdot\vec{k}=\vec{k}\cdot\vec{i}=0\).</p>
+      <p>Враховуючи властивості скалярного добутку двох векторів, отримаємо \(\vec{a}\cdot\vec{b}=a_x\cdot b_x+a_y\cdot b_y+a_z\cdot b_z\).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Отже, скалярний добуток двох векторів дорівнює сумі добутків їх однойменних координат.</p>
+      <p><strong><u>Приклад 4</u></strong>&nbsp;</p>
+      <p>Знайти довжини векторів \(\vec{а}=2\vec{p}+4\vec{q}\) і \( \vec{b}=\vec{p}-2\vec{q}\), якщо \(\left|\vec{p}\right|=3,\mathrm{\ \ }\left| \vec{q}\right|=4,\mathrm{\ \ }\phi=\frac{\pi}{3}\).</p>
+      <p><em><u>Розв&rsquo;язок.</u></em> Оскільки,&nbsp;\(\left|\vec{a}\right|=\sqrt{{\vec{a}}^2}\)</p>
+      <p>Знайдемо \({\vec{a}}^2\):</p>
+      <p>&nbsp;\({\vec{a}}^2=\left(2\vec{p}+4\vec{q}\right)^2=\left(2\vec{p}\right)^2+2\cdot\vec{p}\cdot\vec{q}+\left(4\vec{q}\right)^2=4{\vec{p}}^2+16\vec{p}\cdot\vec{q}+16{\vec{q}}^2=4\left|\vec{p}\right|^2+16\left|\vec{p}\right|\cdot\left|\vec{q}\right|\cdot\cos{\varphi}+16\left|\vec{q}\right|^2=4\cdot3^2+16\cdot3\cdot4\cdot\frac{1}{2}+16\cdot4^2=388\)</p>
+      <p>\(\left|\vec{a}\right|=\sqrt{{\vec{a}}^2}=\sqrt{388}\approx19,7\)</p>
+      <p>\({\vec{b}}^2=\left(\vec{p}-2\vec{q}\right)^2=\left(\vec{p}\right)^2-2\cdot\vec{p}\cdot2\vec{q}+\left(2\vec{q}\right)^2={\vec{p}}^2-4\vec{p}\cdot\vec{q}+4{\vec{q}}^2=\left|\vec{p}\right|^2-4\left|\vec{p}\right|\cdot\left|\vec{q}\right|\cdot c o s{\phi}+4\left|\vec{q}\right|^2=3^2-4\cdot3\cdot4\cdot\frac{1}{2}+4\cdot4^2=9-24+64=49\)</p>
+      <p>\(\left|\vec{b}\right|=\sqrt{{\vec{b}}^2}=\sqrt{49}=7\)</p>
+      <p><strong>Застосування скалярного добутку</strong></p>
+      <ul>
+      <li><strong>кут між двома векторами</strong></li>
+      </ul>
+      <p>Якщо відомі координати векторів \(\vec{a}\)&nbsp;і \(\vec{b}\), то</p>
+      <p>\(cos{\phi}=\frac{\vec{a}\cdot\vec{b}}{\left|\vec{a}\right|\cdot\left|\vec{b}\right|}=\frac{a_x\cdot b_x+a_y\cdot b_y+a_z\cdot b_z}{\sqrt{a_x^2+a_y^2+a_z^2}\cdot\sqrt{b_x^2+b_y^2+b_z^2}}\).</p>
+      <ul>
+      <li><strong>умова перпендикулярності (ортогональності) двох векторів</strong></li>
+      </ul>
+      <p>Якщо \(\vec{a}\bot\vec{b}\), то \(\vec{a}\cdot\vec{b}=0\), тобто \(a_x\cdot b_x+a_y\cdot b_y+a_z\cdot b_z=0\).</p>
+      <p>&nbsp;</p>
+      <p><strong><u>Приклад 5.</u></strong> &nbsp;З&rsquo;ясувати чи вектори \(\vec{а}\)&nbsp;і \(\vec{b}\)&nbsp;перпендикулярні, якщо:</p>
+      <p>1) \(\vec{a}=\vec{i}+\vec{j}-4\vec{k}\), \(\vec{b}=\vec{i}-2\vec{j}+2\vec{k}\);</p>
+      <p>2) \(\vec{a}=3\vec{i}-\vec{j}+4\vec{k}\), \(\vec{b}=2\vec{i}+8\vec{j}+\frac{1}{2}\vec{k}\);</p>
+      <p>&nbsp;</p>
+      <p><em><u>Розв&rsquo;язок.</u></em></p>
+      <p>За умовою перпендикулярності векторів \(a_x\cdot b_x+a_y\cdot b_y+a_z\cdot b_z=0\)&nbsp;маємо:</p>
+      <p>1) \(\vec{a}\cdot\vec{b}=1\cdot1+1\cdot\left(-2\right)+\left(-4\right)\cdot2=1-2-8=-9\neq0\). Отже, вектори не перпендикулярні.</p>
+      <p>2) \(\vec{a}\cdot\vec{b}=3\cdot2+\left(-1\right)\cdot8+4\cdot\frac{1}{2}=6-8+2=0\). Отже, вектори перпендикулярні.</p>
+      </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
