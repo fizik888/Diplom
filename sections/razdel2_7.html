@@ -6,10 +6,12 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="../styles/layout.css" type="text/css" />
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   </script>
 </head>
 
 <body>
+  <div id="topNubex"><img src="../images/top.png" width="30px" height="30px" /></div>
   <header id="header" class="clear">
     <div id="hgroup">
       <h1><a href="../index.html">Название сайта</a></h1>
@@ -24,97 +26,168 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"><p><strong>Тема заняття.</strong> Мішаний добуток трьох векторів</p>
+    <div id="content">
+      <p><strong>Тема заняття.</strong> Мішаний добуток трьох векторів</p>
       <p><strong>&nbsp;</strong></p>
-      <p><strong><em>Мішаним (векторно-скалярним) добутком</em></strong> векторів \(\vec{a}\), \(\vec{b}\)&nbsp;і&nbsp;\(\vec{c}\) називають число, яке дорівнює скалярному добутку векторів&nbsp;\(\left(\vec{a}\times\vec{b}\right)\) і \(\vec{c}\) , де&nbsp;\(\vec{a}\times\vec{b}\) &ndash; векторний добуток векторів \(\vec{a}\)&nbsp;і \(\vec{b}\).</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Мішаний добуток векторів&nbsp;\(\vec{a}\) , \(\vec{b}\)&nbsp;і \(\vec{c}\)&nbsp;позначається символом \(\left(\vec{a},\vec{b},\vec{c}\right)\). Отже, згідно з означенням \(\left(\vec{a},\vec{b},\vec{c}\right)=\left(\vec{a}×\vec{b},\vec{c}\right)\).</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <strong>Геометричний&nbsp; зміст&nbsp; мішаного&nbsp; добутку</strong>. Мішаний добуток векторів за абсолютною величиною дорівнює об&rsquo;єму паралелепіпеда, побудованого на векторах&nbsp;\(\vec{a}\) , \(\vec{b}\)&nbsp;і \(\vec{c}\), як на ребрах (рис.1).</p>
+      <p><strong><em>Мішаним (векторно-скалярним) добутком</em></strong> векторів \(\vec{a}\),
+        \(\vec{b}\)&nbsp;і&nbsp;\(\vec{c}\) називають число, яке дорівнює скалярному добутку
+        векторів&nbsp;\(\left(\vec{a}\times\vec{b}\right)\) і \(\vec{c}\) , де&nbsp;\(\vec{a}\times\vec{b}\) &ndash;
+        векторний добуток векторів \(\vec{a}\)&nbsp;і \(\vec{b}\).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Мішаний добуток векторів&nbsp;\(\vec{a}\) ,
+        \(\vec{b}\)&nbsp;і \(\vec{c}\)&nbsp;позначається символом \(\left(\vec{a},\vec{b},\vec{c}\right)\). Отже, згідно
+        з означенням \(\left(\vec{a},\vec{b},\vec{c}\right)=\left(\vec{a}×\vec{b},\vec{c}\right)\).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <strong>Геометричний&nbsp; зміст&nbsp;
+          мішаного&nbsp; добутку</strong>. Мішаний добуток векторів за абсолютною величиною дорівнює об&rsquo;єму
+        паралелепіпеда, побудованого на векторах&nbsp;\(\vec{a}\) , \(\vec{b}\)&nbsp;і \(\vec{c}\), як на ребрах
+        (рис.1).</p>
       <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/18.png" alt="" />
       <p style="text-align: center;">рис.1</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
       <p><strong>&nbsp;</strong></p>
       <p><strong>Вираження мішаного добутку через координати перемножуваних векторів</strong></p>
-      <p>Нехай \(\vec{a}\left(a_x;a_y;a_z\right)\), \(\vec{b}\left(b_x;b_y;b_z\right)\)&nbsp;і \(\vec{c}\left(c_x;c_y;c_z\right)\). Тоді,&nbsp;</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\left(\vec{a},\vec{b},\vec{c}\right)=\left|\begin{matrix}\vec{a_x}&\vec{a_y}&\vec{a_z}\\\vec{b_x}&\vec{b_y}&\vec{b_z}\\\vec{c_x}&\vec{c_y}&\vec{c_z}\\\end{matrix}\right|\).</p>
-      <p><strong>Приклад 1.</strong> Обчислити мішаний добуток векторів \(\vec{a}\left(2;1;1\right)\), \(\vec{b}\left(2;3;2\right)\), \(\vec{c}\left(3;4;4\right)\).</p>
-      <p>\(\left(\vec{a},\vec{b},\vec{c}\right)=\left|\begin{matrix}2&1&1\\2&3&2\\3&4&4\\\end{matrix}\right|=24+6+8-9-16-8=30-1-24=5\).</p>
+      <p>Нехай \(\vec{a}\left(a_x;a_y;a_z\right)\), \(\vec{b}\left(b_x;b_y;b_z\right)\)&nbsp;і
+        \(\vec{c}\left(c_x;c_y;c_z\right)\). Тоді,&nbsp;</p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        \(\left(\vec{a},\vec{b},\vec{c}\right)=\left|\begin{matrix}\vec{a_x}&\vec{a_y}&\vec{a_z}\\\vec{b_x}&\vec{b_y}&\vec{b_z}\\\vec{c_x}&\vec{c_y}&\vec{c_z}\\\end{matrix}\right|\).
+      </p>
+      <p><strong>Приклад 1.</strong> Обчислити мішаний добуток векторів \(\vec{a}\left(2;1;1\right)\),
+        \(\vec{b}\left(2;3;2\right)\), \(\vec{c}\left(3;4;4\right)\).</p>
+      <p>
+        \(\left(\vec{a},\vec{b},\vec{c}\right)=\left|\begin{matrix}2&1&1\\2&3&2\\3&4&4\\\end{matrix}\right|=24+6+8-9-16-8=30-1-24=5\).
+      </p>
       <p><strong>&nbsp;</strong></p>
       <p><strong>Застосування мішаного добутку</strong></p>
       <p>З геометричного тлумачення мішаного добутку векторів випливають такі залежності:</p>
       <ol>
-      <li><strong>Умова компланарності трьох векторів</strong></li>
+        <li><strong>Умова компланарності трьох векторів</strong></li>
       </ol>
-      <p>Якщо вектори \(\vec{a}\), \(\vec{b}\)&nbsp;і \(\vec{c}\)&nbsp;компланарні, то \(\left(\vec{a},\vec{b},\vec{c}\right)=0\), тобто</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\left|\begin{matrix}\vec{a_x}&\vec{a_y}&\vec{a_z}\\\vec{b_x}&\vec{b_y}&\vec{b_z}\\\vec{c_x}&\vec{c_y}&\vec{c_z}\\\end{matrix}\right|=0\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)</p>
+      <p>Якщо вектори \(\vec{a}\), \(\vec{b}\)&nbsp;і \(\vec{c}\)&nbsp;компланарні, то
+        \(\left(\vec{a},\vec{b},\vec{c}\right)=0\), тобто</p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        \(\left|\begin{matrix}\vec{a_x}&\vec{a_y}&\vec{a_z}\\\vec{b_x}&\vec{b_y}&\vec{b_z}\\\vec{c_x}&\vec{c_y}&\vec{c_z}\\\end{matrix}\right|=0\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        (1)</p>
       <p>&nbsp;</p>
       <ol start="2">
-      <li>Чотири точки \(A\left(x_1;y_1;z_1\right)\), \(B\left(x_2;y_2;z_2\right)\), \(C\left(x_3;y_3;z_3\right)\), \(D\left(x_4;y_4;z_4\right)\) лежать в одній площині.</li>
+        <li>Чотири точки \(A\left(x_1;y_1;z_1\right)\), \(B\left(x_2;y_2;z_2\right)\), \(C\left(x_3;y_3;z_3\right)\),
+          \(D\left(x_4;y_4;z_4\right)\) лежать в одній площині.</li>
       </ol>
-      <p>Шукана умова рівносильна умові компланарності векторів \(\vec{AB}\), \(\vec{AC}\)&nbsp;та \(\vec{AD}\), а отже, згідно з формулою (1) набуває вигляду</p>
-      <p>\(\left|\begin{matrix}x_2-x_1&y_2-y_1&z_2-z_1\\x_3-x_1&y_3-y_1&z_3-z_1\\x_4-x_1&y_4-y_1&z_4-z_1\\\end{matrix}\right|=0\).</p>
+      <p>Шукана умова рівносильна умові компланарності векторів \(\vec{AB}\), \(\vec{AC}\)&nbsp;та \(\vec{AD}\), а отже,
+        згідно з формулою (1) набуває вигляду</p>
+      <p>
+        \(\left|\begin{matrix}x_2-x_1&y_2-y_1&z_2-z_1\\x_3-x_1&y_3-y_1&z_3-z_1\\x_4-x_1&y_4-y_1&z_4-z_1\\\end{matrix}\right|=0\).
+      </p>
       <ol start="3">
-      <li>Об&rsquo;єм тетраедра (трикутної піраміди).</li>
+        <li>Об&rsquo;єм тетраедра (трикутної піраміди).</li>
       </ol>
-      <p>Об&rsquo;єм трикутної піраміди <em>ABCD</em> становить одну шосту об&rsquo;єму паралелепіпеда, побудованого на векторах \(\vec{AB}\), \(\vec{AC}\)&nbsp;та \(\vec{AD}\), тобто</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(V_{пір}=\frac{1}{6}|\left(\vec{АВ},\vec{АC},\vec{АD}\right)|\).</p>
-      <p><strong>Приклад 2. </strong>Перевірити, чи точки A(1;2;-1), B(0;1;5), C(-1;2;1), D(2;1;3) лежать в одній площині.</p>
-      <p>Знайдемо координати векторів: \(\vec{АВ}\left(0-1;1-2;5-\left(-1\right)\right)\), \(\vec{АВ}\left(-1;-1;6\right)\)&nbsp;</p>
+      <p>Об&rsquo;єм трикутної піраміди <em>ABCD</em> становить одну шосту об&rsquo;єму паралелепіпеда, побудованого на
+        векторах \(\vec{AB}\), \(\vec{AC}\)&nbsp;та \(\vec{AD}\), тобто</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        \(V_{пір}=\frac{1}{6}|\left(\vec{АВ},\vec{АC},\vec{АD}\right)|\).</p>
+      <p><strong>Приклад 2. </strong>Перевірити, чи точки A(1;2;-1), B(0;1;5), C(-1;2;1), D(2;1;3) лежать в одній
+        площині.</p>
+      <p>Знайдемо координати векторів: \(\vec{АВ}\left(0-1;1-2;5-\left(-1\right)\right)\),
+        \(\vec{АВ}\left(-1;-1;6\right)\)&nbsp;</p>
       <p>\(\vec{АC}\left(-1-1;2-2;1-\left(-1\right)\right)\),&nbsp;\(\vec{АC}\left(-2;0;2\right)\)</p>
       <p>\(\vec{АD}\left(2-1;1-2;3-\left(-1\right)\right)\),&nbsp; \(\vec{АD}\left(1;-1;4\right)\).</p>
       <p>Знайдемо мішаний добуток цих векторів:</p>
-      <p>\(\left(\vec{AB},\vec{AC},\vec{AD}\right)=\left|\begin{matrix}-1&-1&6\\-2&0&2\\1&-1&4\\\end{matrix}\right|=-2+12-2-8=0\).</p>
-      <p>Згідно з умовою компланарності вектори \(\vec{АВ},\vec{АC},\vec{АD}\)&nbsp;є компланарними, тоді точки А, В, С і D лежать в одній площині.</p>
-      <p><strong>Приклад 3</strong>. &nbsp;Задані координати вершин піраміди A(4;-2;3), B(5;-3;1), C(-4;7;1), D(-1;7;5).</p>
+      <p>
+        \(\left(\vec{AB},\vec{AC},\vec{AD}\right)=\left|\begin{matrix}-1&-1&6\\-2&0&2\\1&-1&4\\\end{matrix}\right|=-2+12-2-8=0\).
+      </p>
+      <p>Згідно з умовою компланарності вектори \(\vec{АВ},\vec{АC},\vec{АD}\)&nbsp;є компланарними, тоді точки А, В, С
+        і D лежать в одній площині.</p>
+      <p><strong>Приклад 3</strong>. &nbsp;Задані координати вершин піраміди A(4;-2;3), B(5;-3;1), C(-4;7;1), D(-1;7;5).
+      </p>
       <p>Знайти:</p>
       <ul>
-      <li>довжину ребра <em>ВС</em>;</li>
-      <li>косинус кута між ребрами <em>ВС</em> і <em>В</em><em>D</em>;</li>
-      <li>площу граней <em>АВС</em>;</li>
-      <li>висоту грані <em>АВС</em>, яка проведена з вершини <em>А</em>;</li>
-      <li>об`єм трикутної піраміди з вершинами у точках <em>A</em><em>,</em><em>B</em><em>,</em><em>C</em><em>,</em><em>D</em>;</li>
-      <li>висоту трикутної піраміди, яка проведена з вершини <em>С </em>на грань <em>ABD</em><em>.</em></li>
+        <li>довжину ребра <em>ВС</em>;</li>
+        <li>косинус кута між ребрами <em>ВС</em> і <em>В</em><em>D</em>;</li>
+        <li>площу граней <em>АВС</em>;</li>
+        <li>висоту грані <em>АВС</em>, яка проведена з вершини <em>А</em>;</li>
+        <li>об`єм трикутної піраміди з вершинами у точках
+          <em>A</em><em>,</em><em>B</em><em>,</em><em>C</em><em>,</em><em>D</em>;</li>
+        <li>висоту трикутної піраміди, яка проведена з вершини <em>С </em>на грань <em>ABD</em><em>.</em></li>
       </ul>
       <p><em><u>Розв</u></em><em><u>`</u></em><em><u>язок.</u></em></p>
       <p>1) довжину ребра <em>ВС</em> знайдемо як відстань між цими точками</p>
       <p>\(ВС=\sqrt{\left(х_С-х_В\right)^2+\left(y_С-y_В\right)^2+\left(z_С-z_В\right)^2}\)</p>
-      <p>\(ВС=\sqrt{\left(-4-5\right)^2+\left(7+3\right)^2+\left(1-1\right)^2}=\sqrt{-9^2+10^2+0^2}=\sqrt{81+100}≈13,45\)</p>
-      <p>2) косинус кута між ребрами <em>ВС</em> і <em>В</em><em>D</em> &ndash; це все одно, що косинус кута між такими за назвою векторами.</p>
-      <p>\(cos{\left(\vec{BC}; \vec{BD}\right)}=\frac{\vec{BC}\cdot\vec{BD}}{\left|\vec{BC}\right|\cdot\left|\vec{BD}\right|}\)&nbsp;</p>
+      <p>
+        \(ВС=\sqrt{\left(-4-5\right)^2+\left(7+3\right)^2+\left(1-1\right)^2}=\sqrt{-9^2+10^2+0^2}=\sqrt{81+100}≈13,45\)
+      </p>
+      <p>2) косинус кута між ребрами <em>ВС</em> і <em>В</em><em>D</em> &ndash; це все одно, що косинус кута між такими
+        за назвою векторами.</p>
+      <p>\(cos{\left(\vec{BC};
+        \vec{BD}\right)}=\frac{\vec{BC}\cdot\vec{BD}}{\left|\vec{BC}\right|\cdot\left|\vec{BD}\right|}\)&nbsp;</p>
       <p>\(\vec{BC}\left(-4-5;7-\left(-3\right);1-1\right)\),&nbsp;\(\vec{BC}\left(-9;10;0\right)\) &nbsp;</p>
       <p>\(\vec{BD}\left(-1-5;7-\left(-3\right);5-1\right)\),&nbsp;\(\vec{BD}\left(-6;10;4\right)\)&nbsp;</p>
       <p>\(\vec{BC}\cdot\vec{BD}=\left(-9\right)\cdot\left(-6\right)+10\cdot10+0\cdot4=154\)</p>
       <p>\(\left|\vec{BC}\right|=\sqrt{\left(-9\right)^2+10^2+0^2}=\sqrt{181}\)</p>
       <p>\(\left|\vec{BD}\right|=\sqrt{\left(-6\right)^2+10^2+4^2}=\sqrt{152}\)</p>
-      <p>\(cos{\left(\vec{BC};\vec{BD}\right)}=\frac{154}{\sqrt{181}\cdot\sqrt{152}}=\frac{154}{\sqrt{27512}}\approx0,9285\)&nbsp;</p>
-      <p>3)&nbsp; Знайдемо координати векторів \(\vec{AB}\left(5-4;-3-\left(-2\right);1-3\right)\),&nbsp;\(\vec{AB}\left(1;-1;-2\right)\) та</p>
+      <p>
+        \(cos{\left(\vec{BC};\vec{BD}\right)}=\frac{154}{\sqrt{181}\cdot\sqrt{152}}=\frac{154}{\sqrt{27512}}\approx0,9285\)&nbsp;
+      </p>
+      <p>3)&nbsp; Знайдемо координати векторів
+        \(\vec{AB}\left(5-4;-3-\left(-2\right);1-3\right)\),&nbsp;\(\vec{AB}\left(1;-1;-2\right)\) та</p>
       <p>\(\vec{AC}\left(-4-4;7-\left(-2\right);1-3\right)\),&nbsp;\(\vec{AC}\left(-8;9;-2\right)\).</p>
-      <p>\(\vec{AB}\times\vec{AC}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\1&-1&-2\\-8&9&-2\\\end{matrix}\right|=\vec{i}\cdot\left(2+18\right)-\vec{j}\cdot\left(-2-16\right)+\vec{k}\cdot\left(9-8\right)=20\vec{i}+18\vec{j}+\vec{k}\),&nbsp; а потім площу грані <em>АВС</em></p>
-      <p>\(S_{ABC}=\frac{1}{2}\left|\vec{AB}\times\vec{AC}\right|=\frac{1}{2}\sqrt{20^2+18^2+1^2}=\frac{1}{2}\sqrt{400+324+1}=\frac{1}{2}\sqrt{725}\approx13,46\)</p>
-      <p>4)&nbsp; висоту грані <em>АВС</em>, яка проведена з вершини <em>А</em>, позначимо \(AN=\frac{2S_{ABC}}{BC}\). Площу грані <em>АВС</em> берем у пункті 3, довжину ребра <em>ВС</em> &ndash; у пункті 1.</p>
+      <p>
+        \(\vec{AB}\times\vec{AC}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\1&-1&-2\\-8&9&-2\\\end{matrix}\right|=\vec{i}\cdot\left(2+18\right)-\vec{j}\cdot\left(-2-16\right)+\vec{k}\cdot\left(9-8\right)=20\vec{i}+18\vec{j}+\vec{k}\),&nbsp;
+        а потім площу грані <em>АВС</em></p>
+      <p>
+        \(S_{ABC}=\frac{1}{2}\left|\vec{AB}\times\vec{AC}\right|=\frac{1}{2}\sqrt{20^2+18^2+1^2}=\frac{1}{2}\sqrt{400+324+1}=\frac{1}{2}\sqrt{725}\approx13,46\)
+      </p>
+      <p>4)&nbsp; висоту грані <em>АВС</em>, яка проведена з вершини <em>А</em>, позначимо \(AN=\frac{2S_{ABC}}{BC}\).
+        Площу грані <em>АВС</em> берем у пункті 3, довжину ребра <em>ВС</em> &ndash; у пункті 1.</p>
       <p>&nbsp;\(AN=\frac{\sqrt{725}}{\sqrt{181}}=\sqrt{\frac{725}{181}}\approx2\)</p>
-      <p>5) об`єм трикутної піраміди з вершинами у точках <em>A</em><em>,</em><em>B</em><em>,</em><em>C</em><em>,</em><em>D</em> знаходимо за формулою \(V_{пір}=\frac{1}{6}|\left(\vec{АВ},\vec{АC},\vec{АD}\right)|\).</p>
-      <p>Знайдемо координати вектора \(\vec{AD}\left(-1-4;7-\left(-2\right);5-3\right)\),&nbsp;&nbsp; \(\vec{AD}\left(-5;9;2\right)\).</p>
+      <p>5) об`єм трикутної піраміди з вершинами у точках
+        <em>A</em><em>,</em><em>B</em><em>,</em><em>C</em><em>,</em><em>D</em> знаходимо за формулою
+        \(V_{пір}=\frac{1}{6}|\left(\vec{АВ},\vec{АC},\vec{АD}\right)|\).</p>
+      <p>Знайдемо координати вектора \(\vec{AD}\left(-1-4;7-\left(-2\right);5-3\right)\),&nbsp;&nbsp;
+        \(\vec{AD}\left(-5;9;2\right)\).</p>
       <p>Знайдемо мішаний добуток векторів</p>
-      <p>\(\left(\vec{AB},\vec{AC},\vec{AD}\right)=\left|\begin{matrix}1&-1&-2\\-8&9&-2\\-5&9&2\\\end{matrix}\right|=1\cdot\left(18+18\right)+1\cdot\left(-16-10\right)-2\cdot\left(-72+45\right)=64\).</p>
-      <p>\(V=\frac{1}{6}\left|\left(\vec{AB},\vec{AC},\vec{AD}\right)\right|=\frac{1}{6}\cdot64=\frac{32}{3}=10\frac{2}{3}\).</p>
-      <p>6)&nbsp; Об&rsquo;єм піраміди знаходиться за формулою \(V=\frac{1}{3}S_o\cdot H\), де основою піраміди (за умовою задачі) є грань <em>ABD</em>. Значить, для знаходження висоти піраміди, проведеної з вершини <em>С </em>на грань <em>ABD</em>, формула буде мати вид \(H=\frac{3V}{S_{ABD}}\).</p>
+      <p>
+        \(\left(\vec{AB},\vec{AC},\vec{AD}\right)=\left|\begin{matrix}1&-1&-2\\-8&9&-2\\-5&9&2\\\end{matrix}\right|=1\cdot\left(18+18\right)+1\cdot\left(-16-10\right)-2\cdot\left(-72+45\right)=64\).
+      </p>
+      <p>
+        \(V=\frac{1}{6}\left|\left(\vec{AB},\vec{AC},\vec{AD}\right)\right|=\frac{1}{6}\cdot64=\frac{32}{3}=10\frac{2}{3}\).
+      </p>
+      <p>6)&nbsp; Об&rsquo;єм піраміди знаходиться за формулою \(V=\frac{1}{3}S_o\cdot H\), де основою піраміди (за
+        умовою задачі) є грань <em>ABD</em>. Значить, для знаходження висоти піраміди, проведеної з вершини <em>С
+        </em>на грань <em>ABD</em>, формула буде мати вид \(H=\frac{3V}{S_{ABD}}\).</p>
       <p>Знайдемо площу грані <em>ABD</em></p>
-      <p>\(\vec{AB}\times \vec{AD}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\1&-1&-2\\-5&9&2\\\end{matrix}\right|=\vec{i}\cdot\left(-2+18\right)-\vec{j}\cdot\left(2-10\right)+\vec{k}\cdot\left(9-5\right)=16\vec{i}+8\vec{j}+4\vec{k}\)</p>
-      <p>\(S_{ABD}=\frac{1}{2}\left|\vec{AB}\times\vec{AD}\right|=\frac{1}{2}\sqrt{16^2+8^2+4^2}=\frac{1}{2}\sqrt{256+64+16}=\frac{1}{2}\sqrt{336}\approx9,2\).</p>
+      <p>\(\vec{AB}\times
+        \vec{AD}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\1&-1&-2\\-5&9&2\\\end{matrix}\right|=\vec{i}\cdot\left(-2+18\right)-\vec{j}\cdot\left(2-10\right)+\vec{k}\cdot\left(9-5\right)=16\vec{i}+8\vec{j}+4\vec{k}\)
+      </p>
+      <p>
+        \(S_{ABD}=\frac{1}{2}\left|\vec{AB}\times\vec{AD}\right|=\frac{1}{2}\sqrt{16^2+8^2+4^2}=\frac{1}{2}\sqrt{256+64+16}=\frac{1}{2}\sqrt{336}\approx9,2\).
+      </p>
       <p>Знайдемо висоту&nbsp; \(H\approx\frac{3\cdot\frac{32}{3}}{9,2}\approx3,49\).</p>
       <p>&nbsp;</p>
     </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
-      function flipflop(id) {
-        element = document.getElementById(id);
-        if (element)
-          element.style.display =
-            element.style.display == "none" ? "" : "none";
-      }
+    function flipflop(id) {
+      element = document.getElementById(id);
+    if (element)
+      element.style.display =
+        element.style.display == "none" ? "" : "none";
+  }
     </script>
-
+    <script>
+  $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#topNubex').fadeIn();
+        } else {
+          $('#topNubex').fadeOut();
+        }
+      });
+    $('#topNubex').click(function () {
+      $('body,html').animate({ scrollTop: 0 }, 700);
+  });
+});
+    </script>
     <!-- right column -->
     <aside id="right_column">
       <h2 class="title">Теми</h2>
