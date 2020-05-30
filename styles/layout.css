@@ -299,14 +299,11 @@ h6 {
   background-color: #ffffff;
 
 }
-.form-search {
-  display: inline-block;
-  border-bottom: 1px solid;
-}
-
-.form-search input {
-  all: unset;
-}
+#topNubex {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+   }
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer,
