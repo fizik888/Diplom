@@ -5,9 +5,9 @@
   <title>Шаблон</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="../styles/layout.css" type="text/css" />
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  </script>
+  <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,26 +30,26 @@
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
-    function flipflop(id) {
-      element = document.getElementById(id);
-    if (element)
-      element.style.display =
-        element.style.display == "none" ? "" : "none";
-  }
+      function flipflop(id) {
+        element = document.getElementById(id);
+        if (element)
+          element.style.display =
+            element.style.display == "none" ? "" : "none";
+      }
     </script>
     <script>
-  $(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() != 0) {
-          $('#topNubex').fadeIn();
-        } else {
-          $('#topNubex').fadeOut();
-        }
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#topNubex').fadeIn();
+          } else {
+            $('#topNubex').fadeOut();
+          }
+        });
+        $('#topNubex').click(function () {
+          $('body,html').animate({ scrollTop: 0 }, 700);
+        });
       });
-    $('#topNubex').click(function () {
-      $('body,html').animate({ scrollTop: 0 }, 700);
-  });
-});
     </script>
     <!-- right column -->
     <aside id="right_column">

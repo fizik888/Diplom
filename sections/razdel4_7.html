@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div id="topNubex"><img src="../images/top.png" width="30px" height="30px" /></div>
   <header id="header" class="clear">
     <div id="hgroup">
       <h1><a href="../index.html">Название сайта</a></h1>
@@ -35,7 +36,20 @@
             element.style.display == "none" ? "" : "none";
       }
     </script>
-
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#topNubex').fadeIn();
+          } else {
+            $('#topNubex').fadeOut();
+          }
+        });
+        $('#topNubex').click(function () {
+          $('body,html').animate({ scrollTop: 0 }, 700);
+        });
+      });
+    </script>
     <!-- right column -->
     <aside id="right_column">
       <h2 class="title">Теми</h2>
