@@ -24,7 +24,101 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content"><p><strong>Тема заняття.</strong> Векторний добуток двох векторів та його властивості</p>
+      <p>&nbsp;</p>
+      <p><strong><em>Векторним добутком векторів</em></strong>&nbsp;\(\vec{a}\) і \(\vec{b}\) називається вектор \(\vec{c}\), який задовольняє умови:</p>
+      <ol>
+      <li>Вектор&nbsp;\(\vec{c}\) перпендикулярний до векторів \(\vec{a}\)&nbsp;і \(\vec{b}\).</li>
+      <li>Напрям&nbsp;\(\vec{c}\) вектора вибирається так, щоб трійка векторів \(\vec{a}\), \(\vec{b}\), \(\vec{c}\)&nbsp;була правою (див. рис.1).</li>
+      <li>\(|\vec{с}|=|\vec{a}|⋅|\vec{b}|⋅sin\varphi\), де \(\varphi\) - кут між векторами \(\vec{a}\)&nbsp;та \(\vec{b}\).</li>
+      </ol>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/15.png" alt="" />
+      <p style="text-align: center;">Рис.1</p>
+      <p>Векторний добуток векторів \(\vec{a}\)&nbsp;та \(\vec{b}\)&nbsp;позначається символами \(\vec{a}\times\vec{b}\).</p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Геометричний зміст векторного добутку.</strong> Площа паралелограма, побудованого на векторах \(\vec{a}\)<em>&nbsp;</em>та \(\vec{b}\), дорівнює модулю векторного добутку цих векторів, які віднесені до спільного початку, тобто&nbsp; \(S=\left|\vec{a}\times\vec{b}\right|\).</p>
+      <p>Справді, площа паралелограма дорівнює добуткові його суміжних сторін на синус кута між ними, тобто</p>
+      <p>\(S=\left|\vec{a}\right|\cdot\left|\vec{b}\right|\cdot s i n{\varphi}=\left|\vec{a}\times\vec{b}\right|\).</p>
+      <p>&nbsp;</p>
+      <p><strong>Властивості векторного добутку</strong></p>
+      <ol>
+      <li>Векторний добуток дорівнює нульовому вектору тоді і тільки тоді, коли вектори колінеарні або один з них нульовий.</li>
+      <li>Векторний добуток залежить від послідовності співмножників, а саме:&nbsp;</li>
+      </ol>
+      <p>\(\vec{a}\times\vec{b}=-\left(\vec{b}\times\vec{a}\right)\)</p>
+      <ol start="3">
+      <li>Асоціативність відносно скалярного множника (числа):</li>
+      </ol>
+      <p>\(\left(\lambda\vec{a}\right)\times\vec{b}=\vec{a}\times\left(\lambda\vec{b}\right)=\lambda\left(\vec{a}\times\vec{b}\right)\).</p>
+      <ol start="4">
+      <li>Розподільна властивість відносно додавання:</li>
+      </ol>
+      <p>\(\left(\vec{a}+\vec{b}\right)\timesс=\vec{a}\times\vec{c}+\vec{b}\times\vec{c}\).</p>
+      <ol start="5">
+      <li>Векторний квадрат завжди дорівнює нулю:</li>
+      </ol>
+      <p>\(\vec{a}\times\vec{а}=0\)<strong>&nbsp;</strong></p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Координатна форма векторного добутку</strong></p>
+      <p>Нехай \(\vec{a}=\left(a_x;a_y;a_z\right)\), \(\vec{b}=\left(b_x;b_y;b_z\right)\). Тоді векторний добуток зручно знаходити за формулою</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{a}\times\vec{b}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\a_x&a_y&a_z\\b_x&b_y&b_z\\\end{matrix}\right|\).</p>
+      <p><strong><u>Приклад 1</u></strong> Дано точки A(2;-1;2), B(1;2;-1), C(3;2;1). Знайти векторний добуток \(\vec{АВ}\times\vec{ВС}\).</p>
+      <p>&nbsp;</p>
+      <p><em>Розв&rsquo;язок.</em></p>
+      <p>\(\vec{АВ}\left(1-2;2-\left(-1\right);-1-2\right)\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{АВ}\left(-1;3;-3\right)\).</p>
+      <p>\(\vec{BC}\left(3-1;2-2;1-\left(-1\right)\right)\), &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(\vec{BC}\left(2;0;2\right)\).</p>
+      <p>\(\vec{AB}\times\vec{BC}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\-1&3&-3\\2&0&2\\\end{matrix}\right|=\vec{i}⋅\left(6-0\right)-\vec{j}⋅\left(-2+6\right)+\vec{k}⋅\left(0-6\right)=6\vec{i}-4\vec{j}-6\vec{k}\).</p>
+      <p>Тобто, отримали вектор \(\vec{c}\left(6;-4;-6\right)\).</p>
+      <p>&nbsp;</p>
+      <p><strong><u>Приклад 2</u></strong> Знайти синус кута \(\varphi\), який утворюють вектори \(\vec{a}\left(2;-2;1\right)\), \(\vec{b}\left(2;3;6\right)\).</p>
+      <p>&nbsp;</p>
+      <p><em>Розв&rsquo;язок.</em></p>
+      <p>&nbsp;\(\left|\vec{a}\right|=\sqrt{4+4+1}=3\), \(\left|\vec{b}\right|=\sqrt{4+9+36}=7\)&nbsp;</p>
+      <p>\(\vec{c}=\vec{a}\times\vec{b}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\2&-2&1\\2&3&6\\\end{matrix}\right|=\vec{i}⋅\left(-12-3\right)-\vec{j}⋅\left(12+2\right)+\vec{k}⋅\left(6-4\right)=-15\vec{i}-10\vec{j}-10\vec{k}\),</p>
+      <p>Тобто, \(\vec{c}\left(-15;-10;10\right)\).</p>
+      <p>\(|\vec{с}|=|\vec{a}×\vec{b}|=\sqrt{225+100+100}=5\sqrt{17}\)</p>
+      <p>\(sin{\varphi}=\frac{\left|\vec{a}\times\vec{b}\right|}{\left|\vec{a}\right|\cdot\left|\vec{b}\right|}\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(sin{\varphi}=\frac{5\sqrt{17}}{21}\)</p>
+      <p><strong>&nbsp;</strong></p>
+      <p>&nbsp;</p>
+      <p><strong><u>Приклад 3</u></strong> Обчислити площу трикутника з вершинами в точках A(1;-1;2), B(5;-6;2), C(1;3;-1) та довжину висоти, проведену з вершини А.</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/16.png" alt="" /></p>
+      <p><em>Розв&rsquo;язок.</em></p>
+      <p>Знайдемо вектори \(\vec{АВ}\)&nbsp;і \(\vec{AC}\), які збігаються зі сторонами трикутника <em>АВС</em>. Маємо</p>
+      <p>\(\vec{АВ}=\left(4;-5;0\right)\), \(\vec{АC}=\left(0;4;-3\right)\).</p>
+      <p>\(\vec{AB}\times\vec{AC}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\4&-5&0\\0&4&-3\\\end{matrix}\right|=\vec{i}⋅\left(15-0\right)-\vec{j}⋅\left(-12-0\right)+\vec{k}⋅\left(16-0\right)=15\vec{i}+12\vec{j}+16\vec{k}\)</p>
+      <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Площа трикутника АВС дорівнює половині площі паралелограма, побудованого на векторах \(\vec{AB}\)&nbsp;і \(\vec{AC}\), тобто</p>
+      <p>\(S_{ABC}=\frac{1}{2}|\vec{АВ}×\vec{АС}=\frac{1}{2}\sqrt{15^2+12^2+16^2}=\frac{1}{2}\sqrt{225+144+256}=\frac{1}{2}\sqrt{625}=12,5\)</p>
+      <p>Знайдемо довжину висоти \(AN\).</p>
+      <p>\(S_{ABC}=\frac{1}{2}ВС⋅AN\), тоді \(AN=\frac{2S_{ABC}}{BC}\).</p>
+      <p>\(ВС=\sqrt{\left(х_С-х_В\right)^2+\left(y_С-y_В\right)^2+\left(z_С-z_В\right)^2}\).</p>
+      <p>\(ВС=\sqrt{\left(1-5\right)^2+\left(3+6\right)^2+\left(-1-2\right)^2}=\sqrt{-4^2+9^2+-3^2}=\sqrt{16+81+9}=\sqrt{106}≈10,3AN=\frac{2⋅12,5}{10,3}≈2,4\)</p>
+      <p><strong><u>Приклад 4</u></strong> Задані координати вершин піраміди A(2;-3;5), B(0;2;1), C(-2;-2;3), D(3;2;4).</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/2/17.png" alt="" />
+      <p>Знайти:</p>
+      <ul>
+      <li>площу граней <em>АВС</em>, <em>ВС</em><em>D;</em></li>
+      <li>висоту грані <em>BCD</em>, яка проведена з вершини <em>D</em>;</li>
+      </ul>
+      <p><em><u>&nbsp;</u></em></p>
+      <p><em><u>Розв</u></em><em><u>`</u></em><em><u>язок.</u></em></p>
+      <ul>
+      <li>Для знаходження площі грані виберемо два вектори, що виходять з однієї вершини, і знайдемо їх векторний добуток.</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>Грань <em>АВС</em>:&nbsp; \(\vec{АВ}=\left(-2;5;-4\right)\), \(\vec{АC}=\left(-4;1;-2\right)\)&nbsp;</p>
+      <p>&nbsp;\(\vec{AB}\times\vec{AC}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\-2&5&-4\\-4&1&-2\\\end{matrix}\right|=\vec{i}⋅\left(-10+4\right)-\vec{j}⋅\left(4-16\right)+\vec{k}⋅\left(-2-20\right)=-6\vec{i}+12\vec{j}+18\vec{k}\)</p>
+      <p>&nbsp;\(S_{ABC}=\frac{1}{2}|\vec{АВ}×\vec{АС}|=\frac{1}{2}\sqrt{36+144+324}=\frac{1}{2}\sqrt{504}≈11,22\)</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>Грань <em>ВСD</em>: \(\vec{ВС}=\left(-2;-4;2\right)\) ,&nbsp;\(\vec{ВD}=\left(3;0;3\right)\)</p>
+      <p>&nbsp;\(\vec{BC}\times\vec{BD}=\left|\begin{matrix}\vec{i}&\vec{j}&\vec{k}\\-2&-4&2\\3&0&3\\\end{matrix}\right|=\vec{i}⋅\left(-12-0\right)-\vec{j}⋅\left(-6-6\right)+\vec{k}⋅\left(-0-12\right)=-12\vec{i}+12\vec{j}+12\vec{k}\)</p>
+      <p>&nbsp;\(S_{BCD}=\frac{1}{2}|\vec{ВС}×\vec{BD}|=\frac{1}{2}\sqrt{432}≈10,39\)</p>
+      <p>2)&nbsp;\(DK=\frac{2S_{BCD}}{BС}\)</p>
+      <p>\(ВC=\sqrt{-2^2+-4^2+2^2}=\sqrt{4+16+4}=\sqrt{24}≈4,9\)</p>
+      <p>\(DK=\frac{2\cdot10,4}{4,9}\approx4,2\)&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
