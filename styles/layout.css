@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-size: 13px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #dbdbdb;
 }
 
 .clear:after {
