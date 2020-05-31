@@ -5,9 +5,10 @@
   <title>Вища математика для спеціальності "Гірництво"</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="../styles/layout.css" type="text/css" />
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="shortcut icon" href="images/math.ico" type="image/x-icon">
+  <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="images/math.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -239,26 +240,26 @@
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
-    function flipflop(id) {
-      element = document.getElementById(id);
-    if (element)
-      element.style.display =
-        element.style.display == "none" ? "" : "none";
-  }
+      function flipflop(id) {
+        element = document.getElementById(id);
+        if (element)
+          element.style.display =
+            element.style.display == "none" ? "" : "none";
+      }
     </script>
     <script>
-  $(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() != 0) {
-          $('#topNubex').fadeIn();
-        } else {
-          $('#topNubex').fadeOut();
-        }
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#topNubex').fadeIn();
+          } else {
+            $('#topNubex').fadeOut();
+          }
+        });
+        $('#topNubex').click(function () {
+          $('body,html').animate({ scrollTop: 0 }, 700);
+        });
       });
-    $('#topNubex').click(function () {
-      $('body,html').animate({ scrollTop: 0 }, 700);
-  });
-});
     </script>
     <!-- right column -->
     <aside id="right_column">
@@ -405,15 +406,10 @@
   <!-- footer -->
   <footer id="footer">
     <p class="fl_left">
-      Copyright &copy; 2020 - All Rights Reserved -
-      <a href="#">копирайт изменить</a>
-    </p>
-    <p class="fl_right">
-      Template by
-      <a href="#" title="Free Website Templates">OS Templates</a>
+      <a href="../index.html" class="copyright">Вища математика</a> © 2020
     </p>
     <div class="clear"></div>
   </footer>
-</body background="nubex.png">
+</body>
 
 </html>
