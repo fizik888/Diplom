@@ -184,7 +184,7 @@ h6 {
   padding: 30px 20px;
   color: #979797;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #333333;
   border-top: none;
   border-bottom: none;
 }
@@ -237,7 +237,9 @@ h6 {
   padding: 4px;
   border: 1px solid #666666;
 }
-
+#container #content #services img {
+  align-self: center;
+}
 /* ------Right Column-----*/
 .list {
   padding: 3px 5px 3px 30px;
@@ -305,6 +307,7 @@ h6 {
 	right: 45px;
 	bottom: 45px;
    }
+ 
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer,
@@ -316,3 +319,4 @@ h6 {
   margin: 0;
   padding: 20px;
 }
+/*----------------------------------------------Media-------------------------------------*/
