@@ -27,7 +27,34 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content">
+      <p><strong>Тема заняття.</strong> Основні методи інтегрування: інтегрування частинами.</p>
+      <p>&nbsp;</p>
+      <p><u>Інтегрування частинами</u></p>
+      <p>Нехай <em>u</em><em>(</em><em>x</em><em>)</em> і <em>v</em><em>(</em><em>x</em><em>)</em> мають неперервні похідні \(u^\prime\left(x\right)\) та \(v^\prime\left(x\right)\), тоді</p>
+      <p>\(\int{udv}=u\cdot v-\int{vdu}\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)</p>
+      <p>Ідея методу &ndash; привести до більш простого інтегралу.</p>
+      <p>У більшості випадків для інтегрування за <em>u</em> приймають:</p>
+      <p>1) складну для інтегрування функцію;</p>
+      <p>2) многочлен;</p>
+      <p>3) будь-яку функцію, що утворює добуток.</p>
+      <p>&nbsp;</p>
+      <ol>
+      <li>В інтегралах виду \(\int{P\left(x\right)e^{ax}dx}\), \(\int{P\left(x\right)sin{a}xdx}\), \(\int{P\left(x\right)cos{a}xdx}\), де \(P\left(x\right)\)&nbsp;- многочлен відносно змінної <em>х</em>, <em>а</em> &ndash; деяке число, вважають, що \(u=P\left(x\right)\), а всі інші співмножники беруть за \(dv\).</li>
+      </ol>
+      <p>&nbsp;</p>
+      <p><strong>Приклади.</strong> Знайти інтеграл:</p>
+      <ol>
+      <li>\(\int{\left(2x-3\right)e^xdx}\). Покладемо \(u=2х-3\), \(dv=е_хdx\). Тоді \(du=u^\prime dx=\left(2х-3\right)^\prime dx=2dx\), \(v=\int{dv}=\int{e^xdx=e^x}\) (вважаємо на цьому етапі розв&rsquo;язку, що довільна стала &nbsp;C = 0). Знайшовши всі потрібні значення, підставимо їх в формулу (1)</li>
+      </ol>
+      <p>\(\int{\left(2x-3\right)e^xdx}=\left(2x-3\right)e^x-\int{e^x\cdot2dx}\). Отриманий останній інтеграл є табличним. Знайшовши його, звівши подібні, отримаємо відповідь. Все це в зошиті записуємо таким чином:</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/15.png" alt="" /></p>
+      <p>&nbsp;</p>
+      <ol start="2">
+      <li>В інтегралах виду \(\int{P\left(x\right)ln{\left|ax\right|}dx}\), \(\int{P\left(x\right)arcsin{a}xdx}\), \(\int{P\left(x\right)arccos{a}xdx}\), \(\int P\left(x\right)arctgaxdx\), \(\int P\left(x\right)arcctgaxdx\), де \(P\left(x\right)\)&nbsp;- многочлен відносно <em>х</em>, <em>а</em> &ndash; деяке число, вважають, що \(P\left(x\right)dx\), а інші співмножники беруть за <em>u</em> .</li>
+      </ol>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/16.png" alt="" /></p>
+    </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
