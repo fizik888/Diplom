@@ -27,7 +27,56 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content"><p><strong>Поняття первісної та невизначеного інтеграла. Основні властивості невизначеного інтеграла.</strong></p>
+      <p>У диференціальному обчисленні основною задачею є задача визначення похідної функції, а в інтегральному обчисленні вирішується обернена задача: відшукання функції за заданою похідною.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Прийнято функцію <em>F</em><em>(</em><em>x</em><em>)</em> називати первісною для функції <em>f</em><em>(</em><em>x</em><em>)</em> на <em>(</em><em>a</em><em>;</em><em>b</em><em>)</em>, якщо для будь-якого <em>х</em>, яке належить інтервалу <em>(</em><em>a</em><em>;</em><em>b</em><em>)</em>&nbsp;для \(\forall x\in\left(a;b\right)\), \(F^\prime\left(x\right)=f\left(x\right)\).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Сукупність усіх первісних функцій \(F\left(x\right)+C\)&nbsp;для функції <em>f</em><em>(</em><em>x</em><em>) </em>на деякому інтервалі називається інтегралом від функції <em>f</em><em>(</em><em>x</em><em>)</em> й позначається</p>
+      <p>\(\int{f\left(x\right)dx=F\left(x\right)+C}\),</p>
+      <p>де С &ndash; будь-яка стала.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Відомо, що будь-яка неперервна на деякому інтервалі функція має на цьому інтервалі первісну.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Основні властивості невизначеного інтеграла:</p>
+      <p>&nbsp;</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/8.png" alt="" /></p>
+      <p style="text-align: center;"><strong>Таблиця інтегралів</strong></p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/9.png" alt="" /></p>
+      <p><strong>Основні методи інтегрування</strong></p>
+      <ol>
+      <li><u>Безпосереднє інтегрування</u></li>
+      </ol>
+      <p>Обчислення невизначених інтегралів за допомогою безпосереднього використання таблиці інтегралів та основних властивостей невизначених інтегралів називається безпосереднім інтегруванням.</p>
+      <p>&nbsp;</p>
+      <p><strong>Приклад 1. </strong></p>
+      <ol>
+      <li>\(\int{\left(2e^x+7-\frac{x^3}{3}+\frac{4}{x}\right)dx}=2\int{e^xdx}+7\int{dx}-\frac{1}{3}\int{x^3dx}+4\int{\frac{1}{x}dx}=2e^x+7x-\frac{1}{3}\cdot \frac{x^3}{9}+4ln|x|+C=2e^x+7x-\frac{x^3}{9}+4ln|x|+C\);</li>
+      <li>\(\int{ctg^2xdx=\int{\left(\frac{1}{{sin}^2{x}}-1\right)dx=\int{\frac{dx}{{sin}^2{x}}-\int{dx=-ctgx-x+C}}}}\)</li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="2">
+      <li><u>Інтегрування шляхом внесення під знак диференціала</u></li>
+      </ol>
+      <p>&nbsp;</p>
+      <p>Якщо \(\int{f\left(x\right)dx=F\left(x\right)+C}\), і \(u=u\left(x\right)\)&nbsp;- будь-яка диференційована за змінною <em>х</em> функція,&nbsp; то \(\int{f\left(u\right)du=F\left(u\right)+C}\). Зокрема, \(\int{f\left(ax+b\right)dx=\frac{1}{a}F\left(ax+b\right)+C}\), де <em>a</em>, <em>b</em> &ndash; дійсні числа, <em>а</em> &ne; 0.</p>
+      <p><strong>Приклад 2.</strong></p>
+      <ul>
+      <li>Користуючись формулами \(\int{e^xdx=e^x+C}\) та \(\int{f\left(ax+b\right)dx=\frac{1}{a}F\left(ax+b\right)+C}\), знайдемо</li>
+      </ul>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/10.png" alt="" /></p>
+      <ol start="3">
+      <li><u>Метод заміни змінної у невизначеному інтегралі</u></li>
+      </ol>
+      <p><strong>&nbsp;</strong></p>
+      <p>Нехай на деякому проміжку визначена складена функція \(f\left(\varphi\left(t\right)\right)\)&nbsp;і функція \(x=\varphi\left(t\right)\)&nbsp;- монотонна функція, яка має неперервну похідну \(\varphi^\prime\left(t\right)\), тоді \(\int{f\left(x\right)dx=\int{f\left(\varphi\left(t\right)\right)\cdot\varphi^\prime\left(t\right)dt}}\).</p>
+      <p>Ця рівність називається формулою заміни змінної у невизначеному інтегралі.</p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Приклади.</strong> Знайти інтеграл:</p>
+      <ol>
+      <li>\(\int{\left(2x+3\right)^4dx}\).</li>
+      </ol>
+      <p>Метод заміни змінної полягає в тому, щоб заданий інтеграл звести до табличного, ввівши нову змінну (наприклад, \(t\)).</p>
+      <p>Виконаємо підстановку \(2х+3=t\), тоді диференціюючи обидві частини рівності отримаємо:&nbsp; \(\left(2х+3\right)^\prime dx=t'dt\),&nbsp; \(2dx=dt\), \(dx=\frac{1}{2}dt\). Підставивши отримані вирази в заданий інтеграл, отримаємо: \(\int{t^4\cdot\frac{1}{2}dt}\). Якщо винести числовий множник за знак інтеграла, то отримаємо інтеграл подібний до такого табличного: \(\int{x^ndx=\frac{x^{n+1}}{n+1}+C},n\neq-1\). І за допомогою цього інтеграла знайдемо заданий. В зошиті всі ці міркування записують так:</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/11.png" alt="" /></p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/12.png" alt="" /></p>
+    </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */

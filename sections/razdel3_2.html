@@ -26,7 +26,44 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content"><h3>Тема заняття. Диференціал функції та його застосування в наближених обчисленнях.</h3>
+      <p>Із означення похідної\(\underset{\mathrm{\Delta x}\rightarrow0}{lim}\frac{\mathrm{\Delta f}}{\mathrm{\Delta x}}=f^\prime(x)\) і границі змінної випливає, що \(\frac{\mathrm{\Delta f}}{\mathrm{\Delta x}}=f^\prime(x)+\alpha\), &nbsp;або \(\mathrm{\Delta f}=f^\prime(x)\cdot\mathrm{\Delta x}+\alpha\cdot\mathrm{\Delta x}\), де&nbsp;\(\alpha\rightarrow0\) при \(\Delta x\rightarrow0\).</p>
+      <p>Головна лінійна відносно приросту незалежної змінної &nbsp;частина приросту диференційовної функції називається її <strong>диференціалом</strong> і позначається символом \(dy\)&nbsp;або \(df\left(x\right)\).</p>
+      <p>Таким чином, за означенням&nbsp;\(df\left(x\right)=f^\prime\left(x\right)\cdot\Delta x\) або \(dy=y^\prime\cdot\Delta x\).</p>
+      <p>Оскільки \(dx=x^\prime\cdot\Delta x=1\cdot\Delta x=\Delta x\), то \(dy=y^\prime\cdot dx=f^\prime\left(x\right)dx\), звідки \(y^\prime=\frac{dy}{dx}=\frac{df\left(x\right)}{dx}\), тобто похідна функції в точці x дорівнює відношенню диференціала цієї функції в цій точці до диференціала аргументу.</p>
+      <p>Як бачимо, знаходження диференціала функції зводиться до знаходження її похідної.</p>
+      <p>Операція знаходження диференціала функції, як і операція знаходження похідної, називається <strong>диференціюванням цієї функції</strong>.</p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong><em>Геометричне тлумачення диференціала</em></strong></p>
+      <p>Нехай функція <em>y</em><em>=</em><em>f</em><sub>&nbsp;</sub>(<em>x</em>) диференційована в точці <em>x</em>. Тоді в точці (<em>x</em>; <em>f</em>(<em>x</em>)) графік функції матиме дотичну (див. рис.), нахилену до додатного напрямку осі <em>Ox</em> під кутом \(\alpha\), \(tg\alpha=f^\prime(x)\). 3 рисунку видно, що \(AB=MA\cdot tg\alpha=f^\prime\left(x\right)\cdot\Delta x=df\left(x\right)\), тобто диференціал функції в точці <em>x</em> дорівнює приросту ординати дотичної до кривої <em>y</em><em>=</em><em>f</em><sub>&nbsp;</sub>(<em>x</em>) в точці <em>x</em>, коли незалежна змінна дістає приріст \(\mathrm{\Delta x}\).</p>
+      <p>&nbsp;</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/7.png" alt="" /></p>
+      <p><strong>Наближені обчислення за допомогою диференціалів</strong></p>
+      <p>При досить малих значеннях \(\Delta x\)</p>
+      <p>\(\Delta y\approx dy\)&nbsp;або \(f\left(x+\Delta х\right)-f\left(x\right)\approx f^\prime\left(x\right)\cdot\Delta x\).</p>
+      <p>Оскільки в цій формулі точка <em>x</em> &ndash; фіксована, а &nbsp;набуває будь-яких досить малих значень, то її можна переписати у вигляді</p>
+      <p>\(f\left(x_0+\Delta х\right)\approx f\left(x_0\right)+f^\prime\left(x_0\right)\cdot\Delta x\), де \(\mathrm{\Delta x}=x-x_0\).</p>
+      <p>Цією формулою зручно користуватися тоді, коли відомо значення функції <em>f</em> (<em>x</em>) в точці <em>x<sub>0</sub></em> і треба знайти її значення в точці \(x_0+\Delta х\), де \(\Delta x\)&nbsp;досить мале.</p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Приклади. </strong></p>
+      <ol>
+      <li>Знайти наближене значення виразу \(5,013^3\).</li>
+      </ol>
+      <p>Розглянемо функцію \(f\left(x\right)=х^3\). Представимо дану степінь у вигляді \(\left(5+0,013\right)^3\). Прийнявши \(х_0=5\)&nbsp;і \(\mathrm{\Delta x}=0,013\), за формулою \(f\left(x_0+\Delta х\right)\approx f\left(x_0\right)+f^\prime\left(x_0\right)\cdot\Delta x\), знайдемо</p>
+      <p>\(f\left(5\right)=5^3=125\),</p>
+      <p>\(f^\prime\left(x\right)=3х^2\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(f^\prime\left(5\right)=3\cdot5^2=75\).</p>
+      <p>Тоді, \(5,013^3=\left(5+0,013\right)^3\approx f\left(5\right)+f^\prime\left(5\right)\cdot0,013=125+75\cdot0,013=125,975\)</p>
+      <p>&nbsp;</p>
+      <ol start="2">
+      <li>Знайти наближене значення виразу \(\sqrt{99,5}\).</li>
+      </ol>
+      <p>Розглянемо функцію \(f\left(x\right)=\sqrt{х}\). Представимо даний вираз у вигляді \(\sqrt{100-0,5}\). Прийнявши \(х_0=100\)&nbsp;і \(\mathrm{\Delta x}=-0,5\), за формулою \(f\left(x_0+\Delta х\right)\approx f\left(x_0\right)+f^\prime\left(x_0\right)\cdot\Delta x\), знайдемо</p>
+      <p>\(f\left(100\right)=\sqrt{100}=10\),</p>
+      <p>\(f^\prime\left(x\right)=\frac{1}{2\sqrt{x}}\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(f^\prime\left(100\right)=\frac{1}{2\sqrt{100}}=\frac{1}{20}=0,05\).</p>
+      <p>Тоді, \(\sqrt{99,5}\approx f\left(100\right)+f^\prime\left(100\right)\cdot\left(-0,5\right)=10-0,05\cdot0,5=9,975\).</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
