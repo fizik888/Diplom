@@ -27,7 +27,55 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content">
+      <p><strong>Тема. Лінійні рівняння першого порядку</strong></p>
+      <p>Диференціальне рівняння типу</p>
+      <p>\(y^\prime+p\left(x\right)y=q\left(x\right)\)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(1)</p>
+      <p>називають <em>лінійним диференціальним рівнянням першого порядку.</em></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Знаходження загального розв&rsquo;язку лінійного диференціального рівняння першого порядку (1) зводиться до розв&rsquo;язку двох диференціальних рівнянь з відокремлюваними змінними за допомогою підстановки:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(y=uv\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)</p>
+      <p>де <em>u</em> і <em>v</em> &ndash; невідомі функції від <em>х</em>, кожна з яких має похідну. Одну з цих функцій можна вибрати довільно, друга має бути означена так, щоб функція (2) була розв&rsquo;язком рівняння (1).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; З (2) знаходимо</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(y^\prime=\frac{dy}{dx}=u\frac{dv}{dx}+v\frac{du}{dx}\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3)</p>
+      <p>&nbsp;</p>
+      <p>Підставив значення <em>у</em> та &nbsp;в рівняння (1), отримаємо</p>
+      <p>\(u\frac{dv}{dx}+v\frac{du}{dx}+p\left(x\right)uv=q\left(x\right)\),</p>
+      <p>або&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(u\frac{dv}{dx}+v\left(\frac{du}{dx}+p\left(x\right)u\right)=q\left(x\right)\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4)</p>
+      <p>так як шукана функція <em>у</em> підстановкою (2) представлена у вигляді добутку двох функцій, то одну з них, наприклад <em>и</em>, можемо вибрати довільно, крім \(u=0\). Виберемо функцію <em>и</em> так, щоб</p>
+      <p>\(\frac{du}{dx}+p\left(x\right)u=0\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5)</p>
+      <p>Розв&rsquo;язуючи отримане рівняння як рівняння з відокремлюваними змінними, знаходимо функцію</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(u^*=e^{-\int{p\left(x\right)dx}}\).</p>
+      <p>Так як функція \(u^*\) є розв&rsquo;язком рівняння (5), то підставивши її до рівняння (4) отримаємо</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(u^*\frac{dv}{dx}=q\left(x\right)\), тобто &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \(dv=\frac{q\left(x\right)}{u^*\left(x\right)}dx\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (6)</p>
+      <p>Розв&rsquo;язавши рівняння (6) як рівняння з відокремленими змінними, в якому&nbsp; \(u^*\)&nbsp;відома, знайдемо&nbsp;\(v=v\left(x,С\right)\) функцію , що містить довільну сталу <em>С</em> і є загальним розв&rsquo;язком рівняння (6).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Замінивши в рівності \(y=uv\)&nbsp;функції <em>u</em> і <em>v</em> знайденими значеннями, отримаємо розв&rsquo;язок</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(y=u^*\left(x\right)\cdot v\left(x,С\right)\)</p>
+      <p>рівняння (1).</p>
+      <p>Деталі, пов&rsquo;язані із застосуванням цього методу (метода Бернуллі), з&rsquo;ясуємо на наступних прикладах.</p>
+      <p><strong>Приклад 1.</strong> <em>Знайти загальний&nbsp; розв&rsquo;язок&nbsp; диференціального рівняння</em></p>
+      <p>\(y^\prime-3y=е^{2х}\).</p>
+      <p><em><u>Розв</u></em><em><u>`</u></em><em><u>язок.</u></em></p>
+      <p>Розділимо рівняння на \(1+х^2\), щоб рівняння мало вигляд як рівняння (1).</p>
+      <p>\(y^\prime+\frac{2хy}{1+х^2}=\frac{х}{1+х^2}\),&nbsp;</p>
+      <p>Підстановка: \(y=u\cdot v,\)&nbsp;тоді&nbsp;&nbsp; \(y^\prime=u\cdot\frac{dv}{dx}+v\cdot\frac{du}{dx}\).</p>
+      <p>&nbsp;\(u\cdot\frac{dv}{dx}+v\cdot\frac{du}{dx}+\frac{2хuv}{1+х^2}=\frac{х}{1+х^2}\)</p>
+      <p>Винесемо \(v\)&nbsp;з другого та третього доданків за дужку</p>
+      <p>&nbsp;\(u\cdot\frac{dv}{dx}+v\left(\frac{du}{dx}+\frac{2хu}{1+х^2}\right)=\frac{х}{1+х^2}\)</p>
+      <p>Прирівнявши вираз у дужках до нуля, отримаємо два диференціальні рівняння з відокремлюваними змінними</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/22.png" alt="" /></p>
+      <p>Повертаючись до підстановки, отримаємо</p>
+      <p>&nbsp;\(y=\frac{1}{1+x^2}\cdot\left(\frac{x^2}{2}+C\right)\)</p>
+      <p><em><u>Відповідь:</u></em> \(y=\frac{1}{1+x^2}\cdot\left(\frac{x^2}{2}+C\right)\).</p>
+      <p><strong>Приклад 2.</strong> <em>Знайти частинний&nbsp; розв&rsquo;язок&nbsp; диференціального рівняння</em></p>
+      <p>\(y^\prime-\frac{2y}{х}=2х^4\), \(у\left(1\right)=\frac{5}{3}\)</p>
+      <p><em><u>Розв</u></em><em><u>`</u></em><em><u>язок.</u></em></p>
+      <p>Знайдемо спочатку загальний розв&rsquo;язок диференціального рівняння.</p>
+      <p>Підстановка: \(y=u\cdot v,\)&nbsp;тоді&nbsp;&nbsp; \(y^\prime=u\cdot\frac{dv}{dx}+v\cdot\frac{du}{dx}\).</p>
+      <p>&nbsp;\(u\cdot\frac{dv}{dx}+v\cdot\frac{du}{dx}-\frac{2uv}{х}=2х^4\)</p>
+      <p>&nbsp;\(u\cdot\frac{dv}{dx}+v\left(\frac{du}{dx}-\frac{2u}{х}\right)=2х^4\)</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/3/23.png" alt="" /></p>
+      <p><em><u>Відповідь:</u></em>&nbsp;\(y=x^2\cdot\left(\frac{2x^3}{3}+1\right)\).</p>
+    </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
