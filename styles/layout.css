@@ -68,7 +68,9 @@ img {
   margin: 0 0 15px 15px;
   clear: right;
 }
-
+.padding a{
+  padding:10px;
+}
 /*----------------------------------------------HTML 5 Overrides-------------------------------------*/
 
 address,
