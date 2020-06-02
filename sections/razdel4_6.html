@@ -27,7 +27,414 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content">
+      <h3>Дискретна випадкова величина</h3>
+      <p><strong>Випадковою величиною </strong>називається така величина, яка в результаті спроби може прийняти те або інше <em>заздалегідь невідоме </em>значення.</p>
+      <p>Приклад випадкової величини:</p>
+      <ul>
+      <li>число пасажирів в автобусі міського маршруту;</li>
+      <li>поточне значення напруги в побутовій електричній мережі.</li>
+      </ul>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Дискретною</strong> випадковою величиною називається така величина, різні значення якої можна заздалегідь перерахувати. Кількість значень дискретної випадкової величини може бути кінцевою, наприклад, число пасажирів у вагоні метро, або зчисленою, наприклад, кількість крапель дощу, що впали на дах дому за останні 50 років.</p>
+      <p>Позначимо:</p>
+      <p>1) дискретну випадкову величину &ndash; символом <em>&xi; </em>;</p>
+      <p>2) повний перелік її значень &ndash; символами <em>х<sub>i</sub></em> (<em>i </em>= 1,&nbsp;2,... , <strong><em>n</em></strong>);</p>
+      <p>3)&nbsp;ймовірність того, що в результаті спроби випадкова величина <em>&xi;</em> набуде одне зі своїх значень (<em>&xi; = x<sub>i&nbsp;</sub></em>) &ndash; символом&nbsp; <strong><em>p</em></strong><em><sub>i</sub> = P</em><sub>&nbsp;</sub>(<em>&xi; = x<sub>i</sub></em>).</p>
+      <p>Події <em>&xi; = x<sub>i</sub></em> (<em>i </em>= 1,2, ..., <em>n</em>) складають <em>повну групу </em>подій, тому доданок ймовірностей цих подій дорівнює одиниці:</p>
+      <p>\(\sum_{i=1}^np_i=1\)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(1 )</p>
+      <p>Рівність (1) називають <strong>умовою нормування ймовірностей</strong> подій повної групи.</p>
+      <p>Ця сумарна величина (1), що дорівнює одиниці, якось розподіляється між ймовірностями окремих значень (<em>х<sub>i</sub></em>) випадкової величини <em>&xi; </em>.</p>
+      <p><strong>Законом розподілу</strong> випадкової величини <em>&xi;</em> називається будь-яке співвідношення, що встановлює зв&rsquo;язок між можливими значеннями (<em>х<sub>i</sub></em>) випадкової величини <em>&xi; </em>і відповідними їм ймовірностями <strong><em>p</em></strong><em><sub>i</sub> </em>= <em>P</em> (<em>&xi;</em><sub>&nbsp;</sub><em>=</em><sub>&nbsp;</sub><em>х<sub>i</sub></em>). Такий закон (див. табл. 1, 2, рис. 1) задає <em>повний</em> ймовірністний опис випадкової величини <em>&xi;</em>.</p>
+      <p>&nbsp;</p>
+      <table>
+      <tbody>
+      <tr>
+      <td colspan="5" width="163">
+      <p><em>Таблиця</em> 1</p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="40">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="28">
+      <p><em>&nbsp;&xi;</em></p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;x</em><sub>1</sub></p>
+      </td>
+      <td width="40">
+      <p><em>&nbsp;x</em><sub>2</sub></p>
+      </td>
+      <td width="32">
+      <p>&nbsp;&frac14;</p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;x<sub>n</sub></em></p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="40">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="28">
+      <p><em>&nbsp;p<sub>i</sub></em></p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;p</em><sub>1</sub></p>
+      </td>
+      <td width="40">
+      <p><em>&nbsp;p</em><sub>2</sub></p>
+      </td>
+      <td width="32">
+      <p>&nbsp;&frac14;</p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;p<sub>n</sub></em></p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="40">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="28">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="40">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="40">
+      <p>&nbsp;</p>
+      </td>
+      <td width="32">
+      <p>&nbsp;</p>
+      </td>
+      </tr>
+      <tr>
+      <td colspan="9" width="298">
+      <p><em>&nbsp;Таблиця</em> 2</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="28">
+      <p><em>&xi;</em></p>
+      </td>
+      <td width="32">
+      <p>&ndash;3</p>
+      </td>
+      <td width="40">
+      <p>&ndash;2</p>
+      </td>
+      <td width="32">
+      <p>&ndash;1</p>
+      </td>
+      <td width="32">
+      <p>0</p>
+      </td>
+      <td width="32">
+      <p>1</p>
+      </td>
+      <td width="32">
+      <p>2</p>
+      </td>
+      <td width="40">
+      <p>3</p>
+      </td>
+      <td width="32">
+      <p>4</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="28">
+      <p><strong><em>p</em></strong><em><sub>i</sub></em></p>
+      </td>
+      <td width="32">
+      <p>0,2</p>
+      </td>
+      <td width="40">
+      <p>0,05</p>
+      </td>
+      <td width="32">
+      <p>0,1</p>
+      </td>
+      <td width="32">
+      <p>0,2</p>
+      </td>
+      <td width="32">
+      <p>0,2</p>
+      </td>
+      <td width="32">
+      <p>0,1</p>
+      </td>
+      <td width="40">
+      <p>0,05</p>
+      </td>
+      <td width="32">
+      <p>0,1</p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/4/3.png" alt="" />
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Рядом розподілу</strong> дискретної випадкової величини <em>&xi;</em> називається табличне завдання її закону розподілу (див. табл.1).</p>
+      <p><strong>Багатокутником розподілу </strong>називається графічне зображення (див. рис. 1) ряду розподілу випадкової величини <em>&xi;</em> у прямокутній системі координат (<em>х</em><em><sub>i</sub></em>, <em>p<sub>i</sub></em>).</p>
+      <h3>Числові характеристики дискретної випадкової величини</h3>
+      <h3>1.&nbsp;&nbsp;&nbsp;&nbsp; Математичне сподівання</h3>
+      <p>При розв&rsquo;язанні багатьох задач теорії ймовірностей немає необхідності знаходити закон розподілу випадкової величини повністю, часто виявляється достатнім визначити тільки деякі параметри цього закону, які називаються <strong>числовими характеристиками</strong>.</p>
+      <p>Найбільш важливими з них є <em>математичне сподівання</em>, яке характеризує <em>середнє значення</em> випадкової величини, і <em>дисперсія</em>, яка характеризує розмір можливого <em>відхилення</em> (<em>розкиду</em>) значень випадкової величини від свого математичного сподівання. Зупинимося на цих характеристиках.</p>
+      <p><strong>Математичним сподіванням </strong>(позначається <strong><em>M</em></strong><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em>]&nbsp;=&nbsp;M<em>&xi;</em>&nbsp;=&nbsp;<em>m<sub>&xi;</sub></em>) дискретної випадкової величини <em>&xi;</em> називається сума добутків усіх можливих значень випадкової величини <em>&xi;</em> на ймовірності цих значень:</p>
+      <p>\(M[\xi]=\sum_{i=1}^nx_i\cdot p_i\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)</p>
+      <p><strong>Приклад.</strong> Знайти математичне сподівання випадкової величини <em>&xi;</em>, закон розподілу якої заданий у табл. 3.</p>
+      <table>
+      <tbody>
+      <tr>
+      <td colspan="6" width="235">
+      <p><em>Таблиця</em> 3</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="36">
+      <p><em>x<sub>i</sub></em></p>
+      </td>
+      <td width="39">
+      <p>&ndash;2</p>
+      </td>
+      <td width="39">
+      <p>&ndash;1</p>
+      </td>
+      <td width="42">
+      <p>0</p>
+      </td>
+      <td width="39">
+      <p>1</p>
+      </td>
+      <td width="39">
+      <p>2</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="36">
+      <p><strong><em>p</em></strong><em><sub>i</sub></em></p>
+      </td>
+      <td width="39">
+      <p>0,3</p>
+      </td>
+      <td width="39">
+      <p>0,2</p>
+      </td>
+      <td width="42">
+      <p>0,1</p>
+      </td>
+      <td width="39">
+      <p>0,3</p>
+      </td>
+      <td width="39">
+      <p>0,1</p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <p><em>Розв&rsquo;язання.</em> За формулою (2) знаходимо:</p>
+      <p><strong><em>M</em></strong><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em>]&nbsp; =<sub>&nbsp;</sub>&ndash;<sub>&nbsp;</sub>2 ∙ 0,3<sub>&nbsp;</sub>+<sub>&nbsp;</sub> (&ndash;<sub>&nbsp;</sub>1 ∙ 0,2)<sub>&nbsp;</sub>+<sub>&nbsp;</sub>0 ∙ 0,1<sub>&nbsp;</sub>+<sub>&nbsp;</sub>1 ∙ 0,3<sub>&nbsp;</sub>+<sub>&nbsp;</sub>2 ∙ 0,1<sub>&nbsp;</sub>=</p>
+      <p>=<sub>&nbsp;</sub>&ndash;<sub>&nbsp;</sub>0,6<sub>&nbsp;</sub>&ndash;<sub>&nbsp;</sub>0,2<sub>&nbsp;</sub>+<sub>&nbsp;</sub>0<sub>&nbsp;</sub>+<sub>&nbsp;</sub>0,3<sub>&nbsp;</sub>+<sub>&nbsp;</sub>0,2<sub>&nbsp;</sub>=<sub>&nbsp;</sub>&ndash;<sub>&nbsp;</sub>0,3.</p>
+      <h3>&nbsp;</h3>
+      <h3>Властивості математичного сподівання випадкової величини</h3>
+      <p>Розглянемо властивості математичного сподівання на прикладі дискретної випадкової величини <em>&xi; </em>.</p>
+      <p>&nbsp;Математичне сподівання <strong>невипадкової </strong>величини <em>С</em> дорівнює самій цій величині. Вважаючи ймовірність цього значення (<em>Р<sub>с</sub></em>&nbsp;= 1) рівною одиниці, тому знаходимо:</p>
+      <p><em>М</em><sub>&nbsp;</sub>[<em>C</em>] = <em>C </em><em>&times;</em><em> Р<sub>с&nbsp;</sub></em>= <em>C </em>&times; 1= <em>C</em>.</p>
+      <ol>
+      <li>Математичне сподівання від <strong>добутку</strong> <strong>невипадкової</strong> величини <em>С</em> на <strong>випадкову</strong> <em>&xi;</em> дорівнює добутку <strong>невипадкової</strong> величини на математичне сподівання випадкової величини, тобто <strong>постійний множник</strong> <em>С</em> можна <strong>виносити</strong> за знак математичного сподівання:</li>
+      </ol>
+      <p>\(M[c\xi]=\sum_{i=1}^nc&sdot;x_i&sdot;p_i = c&sdot;\sum_{i=1}^nx_i&sdot;p_i =c&sdot;M[&xi;]\).</p>
+      <ol start="2">
+      <li>Математичне сподівання <strong>суми</strong> випадкових величин <em>&xi;</em> і <em>&gamma;</em> дорівнює сумі їх математичних сподівань:</li>
+      </ol>
+      <p><strong><em>M </em></strong>[<em>&xi; </em>+ <em>&gamma;</em>] = <strong><em>M </em></strong>[<em>&xi;</em>] + <strong><em>M </em></strong>[<em>&gamma;</em>] .</p>
+      <ol start="3">
+      <li>Математичне сподівання добутку двох <em>незалежних</em> випадкових величин <em>&xi;</em> і <em>&gamma;</em> дорівнює добутку їх математичних сподівань:</li>
+      </ol>
+      <p><strong><em>M</em></strong>[<em>&xi; </em>∙ <em>&gamma;</em>] = <strong><em>M</em></strong>[<em>&xi;</em>] &times; <strong><em>M</em></strong>[<em>&gamma;</em>].</p>
+      <h3>2.&nbsp;&nbsp;&nbsp;&nbsp; Дисперсія випадкової величини</h3>
+      <p>Для оцінки розкиду значень випадкової величини відносно свого математичного сподівання використовують поняття &ldquo;дисперсія&rdquo;.</p>
+      <p><strong>Дисперсією</strong> випадкової величини <em>&xi;</em> (позначають&nbsp;<em>D</em>[<em>&xi;</em>]&nbsp;=&nbsp;D<em><sub>&xi;</sub></em> ) називається математичне сподівання квадрата відхилення випадкової величини від свого математичного сподівання:</p>
+      <p><em>D </em>[<em>&xi;</em>] = <strong><em>M </em></strong>[(<em>&xi; </em>&ndash; <strong><em>m</em></strong><em><sub>&xi; </sub></em>)<sup>2</sup>] <sub>&nbsp;</sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3)</p>
+      <p>Проте для <em>розрахунків</em> більш зручне інше зображення дисперсії:</p>
+      <p><em>D </em>[<em>&xi;</em>] <em><sub>&nbsp;</sub>=</em> M [<em>&xi;</em><sup> 2</sup>] &ndash;<em> <strong>M</strong></em><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em>]<sup>2</sup>.</p>
+      <p>Дисперсія має <em>розмірність квадрата </em>розмірності <em>випадкової величини</em>, що утрудняє її безпосереднє використання для оцінок. Тому для наочної оцінки величини розкиду значень випадкової величини з дисперсії добувають квадратний корінь. Отримана характеристика називається <strong>середнім</strong><strong> квадратичним відхиленням</strong> випадкової величини <em>&xi;</em> (<em>синоніми</em> &ndash; <strong>CKВ</strong>, стандартне відхилення; позначають &sigma;&nbsp;[<em>&xi;</em>]&nbsp;=&nbsp;&sigma;<sub>&nbsp;<em>&xi;</em></sub>&nbsp;):</p>
+      <p>\(\sigma[\xi]=\sqrt{D[\xi]}\)</p>
+      <p><strong>Приклад.</strong> Знайти математичне сподівання (<strong><em>M</em><sub>&nbsp;</sub></strong>[<em>&xi;</em>]) і дисперсію (<em>D</em>[<em>&xi;</em>]) дискретної випадкової величини <em>&xi;</em> &ndash; числа появ події <strong><em>A</em></strong> (виявлення порушення при перевірці водія інспектором ДАІ) <em>в одній </em>спробі, якщо ймовірність появи події дорівнює <strong><em>p</em></strong> (ймовірність непояви <strong><em>q </em></strong>= 1&ndash; <strong><em>p</em></strong>).</p>
+      <p><em>Розв&rsquo;язання</em>. Закон розподілу ймовірностей числа появ події <strong><em>A</em></strong> в одній спробі задається в табл. 4.</p>
+      <table>
+      <tbody>
+      <tr>
+      <td colspan="3" width="115">
+      <p><em>Таблица</em> &nbsp;4</p>
+      </td>
+      <td width="39">
+      <p>&nbsp;</p>
+      </td>
+      <td width="39">
+      <p>&nbsp;</p>
+      </td>
+      <td rowspan="3" width="39">
+      <p>&nbsp;</p>
+      </td>
+      <td rowspan="3" width="352">
+      <p>Тоді математичне сподівання випадкової величини <em>&xi;</em> знайдеться:</p>
+      <p><strong><em>M</em></strong><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em>]&nbsp; =&nbsp;0<sub>&nbsp;</sub>∙<sub>&nbsp;</sub><strong><em>q</em></strong>&nbsp;+<sub>&nbsp;</sub>1∙<sub>&nbsp;</sub><strong><em>p</em></strong>&nbsp;=&nbsp;<strong><em>p</em></strong>.</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="36">
+      <p><em>x<sub>i</sub></em></p>
+      </td>
+      <td width="39">
+      <p>0</p>
+      </td>
+      <td width="39">
+      <p>1</p>
+      </td>
+      <td width="39">
+      <p>&nbsp;</p>
+      </td>
+      <td width="39">
+      <p>&nbsp;</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="36">
+      <p><strong><em>p</em></strong><em><sub>i</sub></em></p>
+      </td>
+      <td width="39">
+      <p><strong><em>q</em></strong></p>
+      </td>
+      <td width="39">
+      <p><strong><em>p</em></strong></p>
+      </td>
+      <td width="39">
+      <p><em>&nbsp;</em></p>
+      </td>
+      <td width="39">
+      <p><em>&nbsp;</em></p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <p><strong><em>M</em></strong><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em><em><sup>2</sup></em>]&nbsp; =&nbsp;0<sup>2</sup><sub>&nbsp;</sub>∙<sub>&nbsp;</sub><strong><em>q</em></strong>&nbsp;+<sub>&nbsp;</sub>1<sup>2</sup>∙<sub>&nbsp;</sub><strong><em>p</em></strong>&nbsp;=&nbsp;<strong><em>p</em></strong>.</p>
+      <p>Дисперсію <em>D </em>[<em>&xi;</em>] &nbsp;випадкової величини <em>&xi;</em> в <em>одній спробі</em> знаходимо:</p>
+      <p><em>D </em>[<em>&xi;</em>] <em><sub>&nbsp;</sub>=</em> M [<em>&xi;</em><sup> 2</sup>] &ndash;<em> <strong>M</strong></em><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em>]<sup>2</sup>.</p>
+      <p><em>D</em> [<em>&xi;</em>] <em><sub>&nbsp;</sub>=</em> <strong><em>р</em></strong> &ndash;<em> <strong>р</strong></em><sup>2&nbsp; </sup>= <strong><em>р</em></strong> ( 1 &ndash; <strong><em>р</em></strong> ) =<strong><em> р</em></strong> ∙<sub>&nbsp;</sub><strong><em>q</em></strong>&nbsp;<sup>&nbsp;&nbsp; </sup></p>
+      <p>Отже, математичне сподівання числа появ події <strong><em>A</em></strong> в одній спробі дорівнює ймовірності <strong><em>p</em></strong> появи цієї події, а дисперсія дорівнює добутку ймовірності появи цієї події (<strong><em>p</em></strong>) на ймовірність її непояви (<strong><em>q</em></strong>).</p>
+      <p>Максимального значення (<em>D </em>[<em>&xi;</em>] =&nbsp;0,25) дисперсія досягає в умовах максимальної невизначеності наслідків випробувань, тобто при <strong><em>p </em></strong>= <strong><em>q</em></strong> = 0,5.</p>
+      <p>Отже, <em>значення дисперсії</em> може бути <em>характеристикою ступеня невизначеності </em>очікуваних <em>результатів </em>спроби.</p>
+      <h3>&nbsp;</h3>
+      <h3>Властивості дисперсії випадкової величини</h3>
+      <ol>
+      <li>Дисперсія <em>невипадкової</em><strong> величини </strong><em>С</em> дорівнює нулю.</li>
+      </ol>
+      <p><em>D </em>[<em>C</em>] = <strong><em>M </em></strong>[(<em>C &ndash; m<sub>c</sub></em>)<sup>2</sup>] = <strong><em>M </em></strong>[(<em>C &ndash; C</em>)<sup>2</sup>] = <strong><em>M </em></strong>[(0)<sup>2</sup>] = 0 .</p>
+      <ol start="2">
+      <li>Дисперсія від <strong>добутку невипадкової </strong>величини <em>С</em> <em>на </em><strong>випадкову</strong> величину <em>&xi;</em> дорівнює добутку квадрата невипадкової величини (<em>С</em><sup>2&nbsp;</sup>) на дисперсію випадкової величини <em>&xi; </em>. Іншими словами, <strong>постійний множник</strong> <em>С </em>можна виносити за знак дисперсії, якщо піднести цей множник у квадрат:</li>
+      </ol>
+      <p><em>D </em>[<em>C </em>∙ <em>&xi;</em>] = <em>C</em><sub>&nbsp;</sub><sup>2</sup> ∙ <em>D</em>&nbsp;[<em>&xi;</em>] .</p>
+      <ol start="3">
+      <li>Дисперсія <strong>суми</strong> (<em>різниці</em>) двох <em>незалежних</em> випадкових величин <em>&xi;</em> і <em>&gamma;</em> дорівнює <strong>сумі</strong> їх дисперсій:</li>
+      </ol>
+      <p><em>D </em>[<em>&xi; </em>&plusmn; <em>&gamma;</em>] = <em>D </em>[<em>&xi;</em>] + <em>D </em>[<em>&gamma;</em>].</p>
+      <p><em>&nbsp;</em></p>
+      <p><strong>Приклад.</strong> Знайти математичне сподівання, дисперсію і середнє квадратичне відхилення випадкової величини, заданої законом розподілу (див. табл. 5):</p>
+      <table>
+      <tbody>
+      <tr>
+      <td colspan="4" width="157">
+      <p><em>Таблиця</em> &nbsp;5</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="36">
+      <p><em>&nbsp;</em><em>xi</em></p>
+      </td>
+      <td width="39">
+      <p>&nbsp;&ndash;2</p>
+      </td>
+      <td width="42">
+      <p>0</p>
+      </td>
+      <td width="39">
+      <p>1</p>
+      </td>
+      </tr>
+      <tr>
+      <td width="36">
+      <p><strong><em>&nbsp;</em></strong><strong><em>p<sub>i</sub></em></strong></p>
+      </td>
+      <td width="39">
+      <p>&nbsp;0,2</p>
+      </td>
+      <td width="42">
+      <p>&nbsp;0,3</p>
+      </td>
+      <td width="39">
+      <p>&nbsp;0,5</p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <p><em>Розв&rsquo;язання</em>. Математичне сподівання обчисляємо за формулою:</p>
+      <p>\(M[\xi] = \sum^n_{i=1}x_i\cdot p_i\)&nbsp; &nbsp;&nbsp;<em>M</em>[<em>&xi;</em>] = &ndash; 2 ∙ 0,2 + 0 ∙ 0,3 + 1 ∙ 0,5 = &ndash; 0,4 + 0,5 = 0,1.</p>
+      <p>Для обчислення дисперсії скористаємося властивістю:</p>
+      <p><em>D </em>[<em>&xi;</em>] <em><sub>&nbsp;</sub>=</em> M [<em>&xi;</em><sup> 2</sup>] &ndash;<em> M</em><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em>]<sup>2</sup>.</p>
+      <p>Із цією метою попередньо знайдемо <em>M </em>[<em>&xi; </em><sup>2</sup>]:</p>
+      <p><em>M </em>[<em>&xi;</em><sub>&nbsp;</sub><sup>2</sup>] = (&ndash; 2)<sup>2 </sup>∙ 0,2 + (0)<sup>2 </sup>∙ 0,3 + (1)<sup>2 </sup>∙ 0,5 = 0,8 + 0,5 = 1,3.</p>
+      <p>Тоді дисперсія знайдеться:</p>
+      <p><em>D </em>[<em>&xi;</em>] <em><sub>&nbsp;</sub>=</em> M [<em>&xi;</em><sup> 2</sup>] &ndash;<em> M</em><strong><sub>&nbsp;</sub></strong>[<em>&xi;</em>]<sup>2</sup> = 1,3 &ndash; (0,1)<sup>2 </sup>= 1,29.</p>
+      <p>Середнє квадратичне відхилення обчисляємо за формулою:</p>
+      <p>\(\sigma[\xi]=D [ξ ]=\sqrt{1,29}=1,14\).</p>
+    </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */

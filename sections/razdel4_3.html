@@ -27,7 +27,83 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content">
+      <p><strong>Тема.</strong> <strong>Ймовірність добутку подій</strong></p>
+      <p>&nbsp;</p>
+      <p><strong>Поняття незалежних подій та вивчення теореми про ймовірність добутку подій.</strong></p>
+      <p><strong>&nbsp;</strong></p>
+      <p><em>Дві події називаються <strong>незалежними,</strong> якщо ймовірність появи однієї з них не залежить від того, відбулася друга подія чи ні.</em></p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>&nbsp;Приклад 1.&nbsp; </strong>Монета кидається двічі. Ймовірність появи герба в першому випробуванні не залежить від появи чи непояви герба в другому випробуванні. В свою чергу, ймовірність появи герба в другому випробуванні не залежить від результатів першого випробування. Отже, події А &mdash; &laquo;поява герба в першому випробуванні&raquo; і Б &mdash; &laquo;поява герба в другому випробуванні&raquo; &mdash; незалежні.</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;<strong>Приклад 2.</strong>&nbsp; В урні 5 білих і 4 чорних кульки. Із неї навмання беруть кульку. Ймовірність появи білої кульки (подія А) дорівнює &mdash; 5. Взяту кульку повертають в урну і &nbsp;продовжують випробування. Ймовірність появи білої кульки при другому випробуванні (подія Б), також дорівнює&nbsp; - 5. В свою чергу, ймовірність витягти білу кульку при першому випробуванні, не залежить від другого випробування. Отже, події А і Б &mdash; незалежні.</p>
+      <p>&nbsp;</p>
+      <p><strong>Умовна ймовірність</strong>.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp; Вище ми говорили, що в основі означення ймовірності випадкової події лежить сукупність деяких певних умов. Якщо ж ніяких інших обмежень, крім цих умов, при обчисленні ймовірності не накладається, то така ймовірність називається <em>безумовною</em>. Якщо ж поява деякої події &nbsp;відбувається за умови, що відбулась інша подія , причому , то ймовірність появи події &nbsp;називають <em>умовною </em>і обчислюють за формулою</p>
+      <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \(P\left(\frac{A}{B}\right)=\frac{P\left(AB\right)}{P\left(B\right)}\),&nbsp; &nbsp;(\(P\left(B\right)&gt;0\)).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp; Деколи використовують таке позначення умовної ймовірності&nbsp; \(P_B\left(A\right)\).</p>
+      <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+      <p><strong>&nbsp;Приклад </strong><strong>3</strong>.&nbsp; Підкидають гральний кубик. Нехай подія \(A=\left(\omega_2,\omega_4,\omega_6\right)\)&nbsp;(випала парна кількість очок), подія \(B=\left(\omega_4,\omega_5,\omega_6\right)\)&nbsp;(випала кількість очок, більше трьох).&nbsp; Між цими подіями є зв&rsquo;язок. Дійсно, &nbsp;зводиться до трьох елементарних подій: випало 4, 5, 6 очок. Якщо подія &nbsp;наступила, то події &nbsp;сприятимуть дві елементарні події: випало 4 або 6 очок.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Отже, \(P(\frac{A}{B})=\frac{2}{3}\).</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Умовна ймовірність служить характеристикою залежності однієї події від іншої.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp; Дві події <em>А</em> і <em>В</em> називаються <em>&nbsp;залежними</em>, якщо \(P(\frac{A}{B})\neq P(A)\),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; і <em>незалежними</em>, якщо \(P(\frac{A}{B})=P(A)\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+      <p><strong>Теорема множення ймовірностей залежних подій</strong>.</p>
+      <p><em>Ймовірність сумісної появи двох залежних подій дорівнює добуткові ймовірності однієї з них на умовну ймовірність іншої, обчисленої за умови, що перша відбулася</em></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(P\left(AB\right)=P\left(A\right)P\left(\frac{B}{A}\right)=P\left(B\right)P\left(\frac{A}{B}\right)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Теорема множення ймовірностей незалежних подій.</strong></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp; Ця теорема є наслідком попередньої. Дійсно, якщо <em>А</em>,<em> В&nbsp; </em>- незалежні події, то, маємо&nbsp; &nbsp;\(P\left(AB\right)=P\left(A\right)P\left(B\right)\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong>Задача </strong><strong>1</strong><strong>.</strong>&nbsp; Два мисливці стріляють одночасно в ціль і незалежно один від одного. Ймовірності влучення в ціль відповідно дорівнюють 0,7 і 0,8. Знайдіть ймовірність того, що</p>
+      <p>а) обидва мисливці влучають у ціль;</p>
+      <p>б) лише один із мисливців влучить у ціль;</p>
+      <p>в) жодний із мисливців не влучить у ціль;</p>
+      <p>г) хоча б один із мисливців влучить у ціль.</p>
+      <p>&nbsp;</p>
+      <p><em>Розв'язання</em></p>
+      <p>Подія А &mdash; &laquo;перший мисливець влучив у ціль&raquo;, Р(А) = 0,7.</p>
+      <p>Подія В &mdash;&laquo;другий мисливець влучив у ціль&raquo;, Р(В) = 0,8.</p>
+      <p>&nbsp;</p>
+      <p>а) Подія С = А∙В &mdash; &laquo;обидва мисливці влучили у ціль&raquo;, тоді</p>
+      <p>&nbsp;Р(С) = Р(А∙В) = Р(А)∙Р(В) = 0,7∙0,8 = 0,56.</p>
+      <p>&nbsp;</p>
+      <p>б)&nbsp; \(Н=А&sdot;\overline{В}+\overline{А}&sdot;В\)&nbsp;- &nbsp;&laquo;лише один із мисливців влучив у ціль&raquo;,</p>
+      <p>тоді Р(Н) = Р(А)∙(1-Р(В)) + (1-Р(А))∙Р(В)</p>
+      <p>Р(Н)=0,7∙0,2+0,3∙0,8=0,36</p>
+      <p>&nbsp;</p>
+      <p>в)&nbsp; \(M=\overline{A}&sdot;\overline{B}\)&nbsp;- &laquo;жоден із мисливців не влучив у ціль&raquo;, тоді</p>
+      <p>Р(М) = (1 - Р(А)) ∙ (1 - Р(В)) = (1 -0,7) ∙ (1 -0,8) = 0,3 ∙ 0,2 = 0,06.</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;г)&nbsp;&nbsp; Р - &laquo;хоча б один із мисливців влучить у ціль&raquo;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;Перший спосіб.</p>
+      <p>&nbsp;Р(Р)&nbsp; =&nbsp; 1 - Р(М) = 1 - 0,06 = 0,94.</p>
+      <p>&nbsp;</p>
+      <p>Другий спосіб.</p>
+      <p>&nbsp;\(Р=А&sdot;\overline{В}+\overline{А}&sdot;В+А&sdot;В\), тоді</p>
+      <p>&nbsp;Р(Р)&nbsp; = Р(А) ∙ (1-Р(В)) +(1-Р(А)) ∙ Р(В) +Р(А) ∙ Р(В) &nbsp;=</p>
+      <p>&nbsp;= 0,7∙(1-0,8)+ (1-0,7)∙0,8+ 0,7∙0,8 = 0,7∙0,2 +0,3∙0,8 + 0,56 = 0,14 + 0,24 + 0,56 = =0,94.</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;<em>Відповіді:</em>&nbsp; а) 0,56;&nbsp;&nbsp;&nbsp; б) 0,38;&nbsp;&nbsp;&nbsp;&nbsp; в) 0,06;&nbsp;&nbsp;&nbsp;&nbsp; г) 0,94.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p><strong>Теорема про ймовірність здійснення принаймні однієї з незалежних подій.</strong></p>
+      <p>Під час розв'язування задач іноді доводиться визначати ймовірність здійснення принаймні однієї з незалежних подій А<sub>1</sub>, А<sub>2</sub><em>, ...,</em> А<em><sub>n</sub></em>, ймовірність яких відома.</p>
+      <p><strong><em>&nbsp;</em></strong></p>
+      <p><strong>Теорема.</strong> Якщо події А<sub>1</sub>, A<sub>2</sub>, А<sub>3</sub>, ..., А<em><sub>n</sub></em> ,&mdash; незалежні, то ймовірність здійснення принаймні однієї з них може бути виражена через ймовірність цих подій за фор&shy;мулою&nbsp;&nbsp;&nbsp;&nbsp; Р(А) = 1 &ndash; (1 &ndash; Р(А<sub>1</sub>)) &middot; (1 &ndash; Р(А<sub>2</sub>)) &middot; ... &middot; (1 &ndash; Р(А<em><sub>n</sub></em>)).</p>
+      <h1>&nbsp;</h1>
+      <p><strong>Наслідок.</strong> Якщо події А<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub>, ..., А<em><sub>n</sub></em> мають однакову ймо&shy;вірність <em>р,</em> то&nbsp; ймовірність здійснення принаймні однієї із них Р(А)=1 &ndash; (1 <em>&ndash; &rho;</em>)<em><sup>n</sup></em><em>.</em></p>
+      <p><strong><em>&nbsp;</em></strong></p>
+      <p><strong><em>&nbsp;</em></strong></p>
+      <p><strong>Задача </strong><strong>2</strong><strong>.</strong> Ймовірності попадання в ціль при стрільбі з трьох гармат відповідно дорівнюють 0,8; 0,7 і 0,9. Знайдіть ймовірність хоч би одного влучення при одному залпі з усіх гармат.</p>
+      <h1>Розв'язання</h1>
+      <p>Ймовірність влучення в ціль кожною із гармат не залежить від результатів стрільб з других гармат, тому події А<sub>1</sub> &mdash; &laquo;влу&shy;чення першою гарматою&raquo;, A<sub>2</sub> &mdash; &laquo;влучення другою гарматою&raquo;; А<sub>3</sub> &mdash; &laquo;влучення третьою гарматою&raquo; незалежні. Якщо А &mdash; &laquo;хоч би одне влучення&raquo;, то</p>
+      <p>Р(А) = 1 - Р(\(\overline{A}_1\)) &middot; Р(\(\overline{A}_2\)) &middot; Р(\(\overline{A}_3\)) = 1 &ndash; (1 &ndash; Р(А<sub>1</sub>))(1 &ndash; Р(А<sub>2</sub>))(1 &ndash; Р(А<sub>3</sub>)) =</p>
+      <p>= 1 &ndash; (1 &ndash; 0,8)(1 &ndash; 0,7)(1 &ndash; 0,9) = 1 &ndash; 0,2 &middot; 0,3 &middot; 0,1 = 0,994.</p>
+      <p><em>Відповідь:</em> 0,994.</p>
+    </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
