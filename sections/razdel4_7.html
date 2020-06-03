@@ -27,7 +27,61 @@
   <!-- content -->
   <div id="container">
     <!-- content body -->
-    <div id="content"></div>
+    <div id="content">
+      <h3>Неперервна випадкова величина. Функція розподілу неперевної&nbsp; випадкової величини</h3>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Не</strong><strong>перервною </strong>випадковою величиною <em>&eta;</em> називається така величина, значення якої безперервно заповнюють деякий проміжок значень.</p>
+      <p>Наприклад &ndash; тривалість людського життя, напруга в побутовій електричній мережі, розмір отриманого чистого прибутку й таке інше.</p>
+      <p>Неперервна випадкова величина має незліченну множину можливих значень, що не дозволяє побудувати для неї ряд розподілу. У цьому випадку розглядають не ймовірність події виникнення точного значення неперервної випадкової величини, тому що ця ймовірність дорівнює нулю [<em>Р</em>(<em>&eta; </em>= <em>x</em>) = 0], а ймовірність того, що випадкова величина <em>&eta;</em> в результаті спроби набуде такого значення, яке не перевершує заздалегідь заданого (граничного) значення <em>x</em> (див. рис. 2). Тобто, розглядається ймовірність <em>події</em> <em>P</em>(<em>&eta;</em> <em>&lt; x</em>) = <em>F</em>(<em>x</em>), яка полягає в тому, що випадкова величина <em>потрапить на інтервал</em> значень &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; \(\infty\) &lt; <em>&eta; &lt; x</em>.</p>
+      <p>Ця ймовірність залежить від величини <em>х</em>, має позначення <em>F</em>(<em>x</em>), існує для всіх неперервних і дискретних випадкових величин і має свою назву &ndash; <em>функція розподілу</em> випадкової величини.</p>
+      <p><strong>Функцією розподілу</strong> випадкової величини (синоніми &ndash; інтегральна функція розподілу, інтегральний закон розподілу) називається <em>ймовірність</em> того, що <em>значення</em> випадкової величини <em>&eta;</em> у результаті спроби<em> потрапить на інтервал</em> значень &ndash; \(\infty\) &lt; <em>&eta; &lt; x</em>:</p>
+      <p><em>F</em>(<em>x</em>) = <em>P</em>(<em>&eta;</em> &lt; <em>x</em>).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)</p>
+      <p><strong>Загальні властивості</strong> функції розподілу:</p>
+      <ul>
+      <li>значення функції розподілу лежать у границях 0 &pound; <em>F</em>(<em>x</em>) &pound; 1;</li>
+      <li>функція розподілу <em>F</em>(<em>x</em>) є неспадна функція свого аргументу, тобто при <em>x</em><sub>2</sub><em> &gt; x</em><sub>1</sub> завжди <em>F</em>(<em>x</em><sub>2</sub>) &sup3; <em>F</em>(<em>x</em><sub>1</sub>);</li>
+      <li>на мінус нескінченності функція розподілу дорівнює нулю:</li>
+      </ul>
+      <p><em>F</em>(&ndash; \(\infty\) ) = 0;</p>
+      <ul>
+      <li>на плюс нескінченності функція розподілу дорівнює одиниці:</li>
+      </ul>
+      <p><em>F</em>(+ \(\infty\)) = 1.</p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/4/4.png" alt="" />
+      <h3>Щільність розподілу неперервної випадкової величини</h3>
+      <p>Якщо випадкова величина <em>&eta;</em> &ndash; безперервна, то для неї існує ще одна характеристика &ndash; щільність розподілу (див. рис. 3, Б).</p>
+      <p><strong>Щільністю розподілу </strong><em>f&nbsp;</em>(<em>x</em>) (<em>синоніми </em>&ndash; щільність розподілу ймовірностей, щільність ймовірностей, диференціальна функція розподілу, диференціальний закон розподілу) називається <em>перша похідна</em> від функції розподілу <em>F</em>(<em>x</em>):</p>
+      <p><em>f&nbsp;</em>(<em>x</em>) = <em>F'</em>(<em>x</em>)<em>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3)</p>
+      <p>Інтегруючи ліву і праву частини останньої рівності, знаходимо:</p>
+      <p>\(F(x)=\int_{-\infty}^{x}{f(x)dx.}\)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(4 )</p>
+      <p>Тоді ймовірність влучення <em>не</em><em>перервної </em>випадкової величини на задану ділянку (див. рис. 3, Б) можна записати так:</p>
+      <p>\(P(a\le X< b)=\int_{a}^{b}{f(x)dx}=F(b)-F(a)\)<em>.</em></p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/4/5.png" alt="" />
+      <p><strong>Властивості</strong>&nbsp; <em>щільності розподілу</em> випливають із рівності (3) і (4):</p>
+      <ol>
+      <li>Функція <em>F</em>(<em>x</em>) &ndash; є не спадна функція свого аргументу, тому щільність розподілу <em>f&nbsp;</em>(<em>x</em>) є <em>не негативною </em>функцією свого аргументу, тобто вся крива лінія розподілу лежить <em>не нижче</em> осі абсцис:</li>
+      </ol>
+      <p><em>f&nbsp;</em>(<em>x</em>) \(\ge\) 0.</p>
+      <ol start="2">
+      <li>Максимальне значення <em>F</em>(<em>x</em>) = 1, тому <em>інтеграл</em> у нескінчених границях від щільності розподілу <em>f&nbsp;</em>(<em>x</em>) <em>дорівнює площі</em>, яка обмежена кривою лінією розподілу і віссю абсцис, і <em>дорівнює одиниці</em>:</li>
+      </ol>
+      <p>\(\int_{-\infty}^{\infty}{f(x)dx=1.}\)</p>
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/4/6.png" alt="" /></p>
+      <p>&nbsp;</p>
+      <h3>Числові характеристики неперервної випадкової величини</h3>
+      <p><strong>&nbsp;</strong></p>
+      <p><strong>Математичне сподівання </strong><strong><em>M</em></strong><strong>[</strong><em>&eta;</em><strong>]</strong> неперервної випадкової величини <em>&eta;</em>, заданої на інтервалі (&ndash;&nbsp;\(\infty,\infty\)), позначають <strong><em>M</em></strong>[<em>&eta;</em>]&nbsp;=&nbsp;M(<em>&eta;</em>)&nbsp;=&nbsp;M<em>&eta;&nbsp;</em>=&nbsp;m<em><sub>&eta;</sub></em> і знаходять за формулою:</p>
+      <p>\(M[\eta]=\int_{-\infty}^{\infty}xf(x)dx\).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3.11)</p>
+      <p>Якщо усі значення неперервної випадкової величини <em>&eta; </em>належать інтервалу (<em>a</em>, <em>b</em>), то у формулі (3.11) варто зазначити саме цей інтервал:</p>
+      <p>\(M[\eta]=\int_a^bxf(x)dx\).</p>
+      <h3>Дисперсія випадкової величини</h3>
+      <p>Для оцінки розкиду значень випадкової величини відносно свого математичного сподівання використовують поняття &ldquo;дисперсія&rdquo;.</p>
+      <p><strong>Дисперсією</strong> випадкової величини <em>&eta;</em> (позначають&nbsp;<em>D</em>[<em>&eta;</em>]&nbsp;=&nbsp;D<em><sub>&eta;</sub></em>) називається математичне сподівання квадрата відхилення випадкової величини від свого математичного сподівання:</p>
+      <p>\(D[\eta]=\int_{-\infty}^{\infty}[x-M(\eta)]^2f(x)dx=\int_{-\infty}^{\infty}x^2f(x)dx-(M(\eta))^2\).</p>
+      <p>Дисперсія має <em>розмірність квадрата </em>розмірності <em>випадкової величини</em>, що утрудняє її безпосереднє використання для оцінок. Тому для наочної оцінки величини розкиду значень випадкової величини з дисперсії добувають квадратний корінь. Отримана характеристика називається <strong>середнім</strong><strong> квадратичним відхиленням</strong> випадкової величини <em>&eta;</em> (<em>синоніми</em> &ndash; <strong>CKВ</strong>, стандартне відхилення; позначають &sigma;&nbsp;[<em>&eta;</em>]&nbsp;=&nbsp;&sigma;<sub>&nbsp;<em>&eta;</em></sub>&nbsp; ):</p>
+      \(\sigma[\eta]=\sqrt{D[\eta]}.\)
+      <p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/4/7.png" alt="" /></p>
+    </div>
 
     <!-- scripts -->
     <script language="JavaScript">  /* Скрипт на выпадающий список */
